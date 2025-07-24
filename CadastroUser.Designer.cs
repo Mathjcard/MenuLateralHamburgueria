@@ -39,12 +39,13 @@
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtNomeUser = new System.Windows.Forms.TextBox();
             this.lblCargo = new System.Windows.Forms.Label();
-            this.txtCargo = new System.Windows.Forms.TextBox();
             this.lblNomeUser = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblUsuarioNome = new System.Windows.Forms.Label();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
+            this.txtCargo = new System.Windows.Forms.TextBox();
             this.panelLogo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -159,14 +160,6 @@
             this.lblCargo.TabIndex = 29;
             this.lblCargo.Text = "Cargo";
             // 
-            // txtCargo
-            // 
-            this.txtCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCargo.Location = new System.Drawing.Point(210, 253);
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(380, 35);
-            this.txtCargo.TabIndex = 20;
-            // 
             // lblNomeUser
             // 
             this.lblNomeUser.AutoSize = true;
@@ -219,6 +212,28 @@
             this.lblUsuarioNome.TabIndex = 23;
             this.lblUsuarioNome.Text = "Nome";
             // 
+            // cmbCargo
+            // 
+            this.cmbCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Items.AddRange(new object[] {
+            "Recepcionista",
+            "Garçom",
+            "Gerente"});
+            this.cmbCargo.Location = new System.Drawing.Point(212, 270);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(380, 37);
+            this.cmbCargo.TabIndex = 32;
+            this.cmbCargo.Text = "Escolha uma Opção";
+            // 
+            // txtCargo
+            // 
+            this.txtCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCargo.Location = new System.Drawing.Point(210, 253);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(380, 35);
+            this.txtCargo.TabIndex = 20;
+            // 
             // frmCadastroUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +241,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(792, 615);
+            this.Controls.Add(this.cmbCargo);
             this.Controls.Add(this.SenhaBox);
             this.Controls.Add(this.txtConfirmaSenha);
             this.Controls.Add(this.lblConfirmeSenhaCadastro);
@@ -263,11 +279,12 @@
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtNomeUser;
         private System.Windows.Forms.Label lblCargo;
-        private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.Label lblNomeUser;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblUsuarioNome;
+        private System.Windows.Forms.ComboBox cmbCargo;
+        private System.Windows.Forms.TextBox txtCargo;
     }
 }
