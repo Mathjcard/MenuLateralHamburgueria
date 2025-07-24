@@ -103,6 +103,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testeConexaoBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testeConexaoBanco.Designer.cs">
+      <DependentUpon>testeConexaoBanco.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CadastroUser.resx">
       <DependentUpon>CadastroUser.cs</DependentUpon>
     </EmbeddedResource>
