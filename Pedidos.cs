@@ -16,5 +16,10 @@ namespace MenuLateralHamburgueria
         {
             InitializeComponent();
         }
+
+        private void frmPedidos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

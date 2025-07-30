@@ -28,5 +28,22 @@ namespace MenuLateralHamburgueria
             
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+              this.Close();
+               frmPedidos   frmPedidos = new   frmPedidos();
+              frmPedidos.ShowDialog();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+            this.clos();
+            frmPedidos FrmPedidos = new frmPedidos();
+           FrmPedidos.ShowDialog();
+           
+        }
     }
 }
