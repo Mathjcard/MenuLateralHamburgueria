@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panelCentro = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.btnConfiguracao = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelCentro = new System.Windows.Forms.Panel();
             this.panelPrincipal.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,46 +56,8 @@
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelPrincipal.Location = new System.Drawing.Point(0, 0);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(202, 526);
+            this.panelPrincipal.Size = new System.Drawing.Size(202, 607);
             this.panelPrincipal.TabIndex = 0;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.Orange;
-            this.panelLogo.Controls.Add(this.textBox1);
-            this.panelLogo.Controls.Add(this.pictureBox1);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(202, 82);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Orange;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(63, 20);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(139, 45);
-            this.textBox1.TabIndex = 100000;
-            this.textBox1.TabStop = false;
-            this.textBox1.Text = "HAMBURGUERIA  CHAPA QUENTE";
-            // 
-            // panelCentro
-            // 
-            this.panelCentro.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.panelCentro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelCentro.BackgroundImage")));
-            this.panelCentro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panelCentro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCentro.Location = new System.Drawing.Point(202, 0);
-            this.panelCentro.Name = "panelCentro";
-            this.panelCentro.Size = new System.Drawing.Size(782, 526);
-            this.panelCentro.TabIndex = 1;
             // 
             // button4
             // 
@@ -109,7 +71,7 @@
             this.button4.ForeColor = System.Drawing.Color.Orange;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 484);
+            this.button4.Location = new System.Drawing.Point(0, 565);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(202, 45);
             this.button4.TabIndex = 5;
@@ -193,6 +155,33 @@
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.Orange;
+            this.panelLogo.Controls.Add(this.textBox1);
+            this.panelLogo.Controls.Add(this.pictureBox1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(202, 82);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Orange;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(63, 20);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(139, 45);
+            this.textBox1.TabIndex = 100000;
+            this.textBox1.TabStop = false;
+            this.textBox1.Text = "HAMBURGUERIA  CHAPA QUENTE";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -203,11 +192,22 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panelCentro
+            // 
+            this.panelCentro.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.panelCentro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelCentro.BackgroundImage")));
+            this.panelCentro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panelCentro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCentro.Location = new System.Drawing.Point(202, 0);
+            this.panelCentro.Name = "panelCentro";
+            this.panelCentro.Size = new System.Drawing.Size(918, 607);
+            this.panelCentro.TabIndex = 1;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(984, 526);
+            this.ClientSize = new System.Drawing.Size(1120, 607);
             this.Controls.Add(this.panelCentro);
             this.Controls.Add(this.panelPrincipal);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

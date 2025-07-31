@@ -32,8 +32,8 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.imgLancheMilao = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblLanches = new System.Windows.Forms.Label();
+            this.lblBebidas = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.pnlLancheMiami = new System.Windows.Forms.Panel();
             this.pnlControlesLancheMiami = new System.Windows.Forms.Panel();
@@ -120,6 +120,10 @@
             this.ptbExcSprite = new System.Windows.Forms.PictureBox();
             this.ptbAddSprite = new System.Windows.Forms.PictureBox();
             this.lblBebidaSprite = new System.Windows.Forms.Label();
+            this.btnRegistrarPedido = new System.Windows.Forms.Button();
+            this.lblMesas = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnLimparTudo = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLancheMilao)).BeginInit();
             this.pnlLancheMiami.SuspendLayout();
@@ -192,7 +196,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(725, 67);
+            this.panelLogo.Size = new System.Drawing.Size(719, 67);
             this.panelLogo.TabIndex = 1;
             // 
             // label2
@@ -215,31 +219,31 @@
             this.imgLancheMilao.TabIndex = 5;
             this.imgLancheMilao.TabStop = false;
             // 
-            // label1
+            // lblLanches
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 25);
-            this.label1.TabIndex = 100003;
-            this.label1.Text = "LANCHES";
+            this.lblLanches.AutoSize = true;
+            this.lblLanches.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLanches.Location = new System.Drawing.Point(23, 143);
+            this.lblLanches.Name = "lblLanches";
+            this.lblLanches.Size = new System.Drawing.Size(118, 25);
+            this.lblLanches.TabIndex = 100003;
+            this.lblLanches.Text = "LANCHES";
             // 
-            // label3
+            // lblBebidas
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 276);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 25);
-            this.label3.TabIndex = 100004;
-            this.label3.Text = "BEBIDAS";
+            this.lblBebidas.AutoSize = true;
+            this.lblBebidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBebidas.Location = new System.Drawing.Point(23, 342);
+            this.lblBebidas.Name = "lblBebidas";
+            this.lblBebidas.Size = new System.Drawing.Size(109, 25);
+            this.lblBebidas.TabIndex = 100004;
+            this.lblBebidas.Text = "BEBIDAS";
             // 
             // splitter1
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 67);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 397);
+            this.splitter1.Size = new System.Drawing.Size(3, 530);
             this.splitter1.TabIndex = 100005;
             this.splitter1.TabStop = false;
             // 
@@ -280,7 +284,7 @@
             // 
             this.ptbExcMiami.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcMiami.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcMiami.Image")));
-            this.ptbExcMiami.Location = new System.Drawing.Point(12, 14);
+            this.ptbExcMiami.Location = new System.Drawing.Point(11, 8);
             this.ptbExcMiami.Name = "ptbExcMiami";
             this.ptbExcMiami.Size = new System.Drawing.Size(20, 20);
             this.ptbExcMiami.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -292,7 +296,7 @@
             // 
             this.ptbAddMiami.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddMiami.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddMiami.Image")));
-            this.ptbAddMiami.Location = new System.Drawing.Point(67, 8);
+            this.ptbAddMiami.Location = new System.Drawing.Point(68, 8);
             this.ptbAddMiami.Name = "ptbAddMiami";
             this.ptbAddMiami.Size = new System.Drawing.Size(20, 20);
             this.ptbAddMiami.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -564,7 +568,7 @@
             this.pnlLanches.Controls.Add(this.pnlLancheDetroit);
             this.pnlLanches.Controls.Add(this.pnlLancheNovaYork);
             this.pnlLanches.Controls.Add(this.pnlLancheMiami);
-            this.pnlLanches.Location = new System.Drawing.Point(30, 105);
+            this.pnlLanches.Location = new System.Drawing.Point(28, 171);
             this.pnlLanches.Name = "pnlLanches";
             this.pnlLanches.Size = new System.Drawing.Size(653, 160);
             this.pnlLanches.TabIndex = 100043;
@@ -722,7 +726,7 @@
             this.pnlBebidas.Controls.Add(this.pnlBebidaCoca);
             this.pnlBebidas.Controls.Add(this.pnlBebidaFanta);
             this.pnlBebidas.Controls.Add(this.pnlBebidaSprite);
-            this.pnlBebidas.Location = new System.Drawing.Point(30, 304);
+            this.pnlBebidas.Location = new System.Drawing.Point(28, 370);
             this.pnlBebidas.Name = "pnlBebidas";
             this.pnlBebidas.Size = new System.Drawing.Size(653, 160);
             this.pnlBebidas.TabIndex = 100045;
@@ -1195,17 +1199,78 @@
             this.lblBebidaSprite.Text = "SPRITE";
             this.lblBebidaSprite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnRegistrarPedido
+            // 
+            this.btnRegistrarPedido.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistrarPedido.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnRegistrarPedido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnRegistrarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarPedido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarPedido.ForeColor = System.Drawing.Color.LimeGreen;
+            this.btnRegistrarPedido.Location = new System.Drawing.Point(536, 547);
+            this.btnRegistrarPedido.Margin = new System.Windows.Forms.Padding(0);
+            this.btnRegistrarPedido.Name = "btnRegistrarPedido";
+            this.btnRegistrarPedido.Size = new System.Drawing.Size(145, 39);
+            this.btnRegistrarPedido.TabIndex = 100046;
+            this.btnRegistrarPedido.Text = "Registrar Pedido";
+            this.btnRegistrarPedido.UseVisualStyleBackColor = false;
+            // 
+            // lblMesas
+            // 
+            this.lblMesas.AutoSize = true;
+            this.lblMesas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMesas.Location = new System.Drawing.Point(23, 80);
+            this.lblMesas.Name = "lblMesas";
+            this.lblMesas.Size = new System.Drawing.Size(76, 25);
+            this.lblMesas.TabIndex = 100047;
+            this.lblMesas.Text = "MESA";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.75F);
+            this.comboBox1.Items.AddRange(new object[] {
+            "001",
+            "002",
+            "003"});
+            this.comboBox1.Location = new System.Drawing.Point(28, 108);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(202, 25);
+            this.comboBox1.TabIndex = 100048;
+            this.comboBox1.Text = "Escolha uma mesa";
+            // 
+            // btnLimparTudo
+            // 
+            this.btnLimparTudo.BackColor = System.Drawing.Color.Transparent;
+            this.btnLimparTudo.FlatAppearance.BorderSize = 0;
+            this.btnLimparTudo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnLimparTudo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnLimparTudo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimparTudo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimparTudo.ForeColor = System.Drawing.Color.Red;
+            this.btnLimparTudo.Location = new System.Drawing.Point(28, 547);
+            this.btnLimparTudo.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLimparTudo.Name = "btnLimparTudo";
+            this.btnLimparTudo.Size = new System.Drawing.Size(145, 39);
+            this.btnLimparTudo.TabIndex = 100049;
+            this.btnLimparTudo.Text = "Limpar";
+            this.btnLimparTudo.UseVisualStyleBackColor = false;
+            // 
             // frmProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(742, 427);
+            this.ClientSize = new System.Drawing.Size(719, 597);
+            this.Controls.Add(this.btnLimparTudo);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lblMesas);
+            this.Controls.Add(this.btnRegistrarPedido);
             this.Controls.Add(this.pnlBebidas);
             this.Controls.Add(this.pnlLanches);
             this.Controls.Add(this.splitter1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblBebidas);
+            this.Controls.Add(this.lblLanches);
             this.Controls.Add(this.panelLogo);
             this.Name = "frmProdutos";
             this.Text = "PRODUTOS";
@@ -1295,8 +1360,8 @@
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox imgLancheMilao;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblLanches;
+        private System.Windows.Forms.Label lblBebidas;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Panel pnlLancheMiami;
         private System.Windows.Forms.Panel pnlControlesLancheMiami;
@@ -1383,5 +1448,9 @@
         private System.Windows.Forms.PictureBox imgBebidaCoca;
         private System.Windows.Forms.PictureBox imgBebidaPepsi;
         private System.Windows.Forms.PictureBox imgBebidaGuarana;
+        private System.Windows.Forms.Button btnRegistrarPedido;
+        private System.Windows.Forms.Label lblMesas;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnLimparTudo;
     }
 }
