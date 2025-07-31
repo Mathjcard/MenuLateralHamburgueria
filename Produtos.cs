@@ -341,7 +341,9 @@ namespace MenuLateralHamburgueria
 
         private void btnRegistrarPedido_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chegando no registrar pedido");
+            MessageBox.Show("Chegando no registrar pedido" + cmbMesas.Text);
+
+            
         }
     }
 }

@@ -122,7 +122,7 @@
             this.lblBebidaSprite = new System.Windows.Forms.Label();
             this.btnRegistrarPedido = new System.Windows.Forms.Button();
             this.lblMesas = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbMesas = new System.Windows.Forms.ComboBox();
             this.btnLimparTudo = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLancheMilao)).BeginInit();
@@ -1227,19 +1227,22 @@
             this.lblMesas.TabIndex = 100047;
             this.lblMesas.Text = "MESA";
             // 
-            // comboBox1
+            // cmbMesas
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.75F);
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbMesas.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbMesas.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.cmbMesas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.75F);
+            this.cmbMesas.ImeMode = System.Windows.Forms.ImeMode.Close;
+            this.cmbMesas.Items.AddRange(new object[] {
             "001",
             "002",
             "003",
             "004"});
-            this.comboBox1.Location = new System.Drawing.Point(28, 108);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(202, 25);
-            this.comboBox1.TabIndex = 100048;
-            this.comboBox1.Text = "Escolha uma mesa";
+            this.cmbMesas.Location = new System.Drawing.Point(28, 108);
+            this.cmbMesas.Name = "cmbMesas";
+            this.cmbMesas.Size = new System.Drawing.Size(202, 25);
+            this.cmbMesas.TabIndex = 100048;
+            this.cmbMesas.Text = "Escolha uma mesa";
             // 
             // btnLimparTudo
             // 
@@ -1265,7 +1268,7 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(719, 597);
             this.Controls.Add(this.btnLimparTudo);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbMesas);
             this.Controls.Add(this.lblMesas);
             this.Controls.Add(this.btnRegistrarPedido);
             this.Controls.Add(this.pnlBebidas);
@@ -1452,7 +1455,7 @@
         private System.Windows.Forms.PictureBox imgBebidaGuarana;
         private System.Windows.Forms.Button btnRegistrarPedido;
         private System.Windows.Forms.Label lblMesas;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbMesas;
         private System.Windows.Forms.Button btnLimparTudo;
     }
 }
