@@ -1215,6 +1215,7 @@
             this.btnRegistrarPedido.TabIndex = 100046;
             this.btnRegistrarPedido.Text = "Registrar Pedido";
             this.btnRegistrarPedido.UseVisualStyleBackColor = false;
+            this.btnRegistrarPedido.Click += new System.EventHandler(this.btnRegistrarPedido_Click);
             // 
             // lblMesas
             // 
@@ -1232,7 +1233,8 @@
             this.comboBox1.Items.AddRange(new object[] {
             "001",
             "002",
-            "003"});
+            "003",
+            "004"});
             this.comboBox1.Location = new System.Drawing.Point(28, 108);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(202, 25);
