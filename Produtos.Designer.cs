@@ -278,8 +278,9 @@
             // 
             // ptbExcMiami
             // 
+            this.ptbExcMiami.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcMiami.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcMiami.Image")));
-            this.ptbExcMiami.Location = new System.Drawing.Point(12, 8);
+            this.ptbExcMiami.Location = new System.Drawing.Point(12, 14);
             this.ptbExcMiami.Name = "ptbExcMiami";
             this.ptbExcMiami.Size = new System.Drawing.Size(20, 20);
             this.ptbExcMiami.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -289,6 +290,7 @@
             // 
             // ptbAddMiami
             // 
+            this.ptbAddMiami.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddMiami.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddMiami.Image")));
             this.ptbAddMiami.Location = new System.Drawing.Point(67, 8);
             this.ptbAddMiami.Name = "ptbAddMiami";
@@ -365,6 +367,7 @@
             // 
             // ptbExcNovaYork
             // 
+            this.ptbExcNovaYork.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcNovaYork.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcNovaYork.Image")));
             this.ptbExcNovaYork.Location = new System.Drawing.Point(12, 8);
             this.ptbExcNovaYork.Name = "ptbExcNovaYork";
@@ -376,6 +379,7 @@
             // 
             // ptbAddNovaYork
             // 
+            this.ptbAddNovaYork.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddNovaYork.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddNovaYork.Image")));
             this.ptbAddNovaYork.Location = new System.Drawing.Point(67, 8);
             this.ptbAddNovaYork.Name = "ptbAddNovaYork";
@@ -441,6 +445,7 @@
             // 
             // ptbExcDetroit
             // 
+            this.ptbExcDetroit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcDetroit.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcDetroit.Image")));
             this.ptbExcDetroit.Location = new System.Drawing.Point(12, 8);
             this.ptbExcDetroit.Name = "ptbExcDetroit";
@@ -452,6 +457,7 @@
             // 
             // ptbAddDetroit
             // 
+            this.ptbAddDetroit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddDetroit.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddDetroit.Image")));
             this.ptbAddDetroit.Location = new System.Drawing.Point(67, 8);
             this.ptbAddDetroit.Name = "ptbAddDetroit";
@@ -517,6 +523,7 @@
             // 
             // ptbExcAmazonas
             // 
+            this.ptbExcAmazonas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcAmazonas.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcAmazonas.Image")));
             this.ptbExcAmazonas.Location = new System.Drawing.Point(12, 8);
             this.ptbExcAmazonas.Name = "ptbExcAmazonas";
@@ -528,6 +535,7 @@
             // 
             // ptbAddAmazonas
             // 
+            this.ptbAddAmazonas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddAmazonas.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddAmazonas.Image")));
             this.ptbAddAmazonas.Location = new System.Drawing.Point(67, 8);
             this.ptbAddAmazonas.Name = "ptbAddAmazonas";
@@ -596,6 +604,7 @@
             // 
             // ptbExcMilao
             // 
+            this.ptbExcMilao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcMilao.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcMilao.Image")));
             this.ptbExcMilao.Location = new System.Drawing.Point(12, 8);
             this.ptbExcMilao.Name = "ptbExcMilao";
@@ -607,6 +616,7 @@
             // 
             // ptbAddMilao
             // 
+            this.ptbAddMilao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddMilao.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddMilao.Image")));
             this.ptbAddMilao.Location = new System.Drawing.Point(67, 8);
             this.ptbAddMilao.Name = "ptbAddMilao";
@@ -671,6 +681,7 @@
             // 
             // ptbExcPaulista
             // 
+            this.ptbExcPaulista.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcPaulista.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcPaulista.Image")));
             this.ptbExcPaulista.Location = new System.Drawing.Point(12, 8);
             this.ptbExcPaulista.Name = "ptbExcPaulista";
@@ -682,6 +693,7 @@
             // 
             // ptbAddPaulista
             // 
+            this.ptbAddPaulista.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddPaulista.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddPaulista.Image")));
             this.ptbAddPaulista.Location = new System.Drawing.Point(67, 8);
             this.ptbAddPaulista.Name = "ptbAddPaulista";
@@ -761,6 +773,7 @@
             // 
             // ptbExcSuco
             // 
+            this.ptbExcSuco.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcSuco.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcSuco.Image")));
             this.ptbExcSuco.Location = new System.Drawing.Point(12, 8);
             this.ptbExcSuco.Name = "ptbExcSuco";
@@ -772,6 +785,7 @@
             // 
             // ptbAddSuco
             // 
+            this.ptbAddSuco.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddSuco.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddSuco.Image")));
             this.ptbAddSuco.Location = new System.Drawing.Point(67, 8);
             this.ptbAddSuco.Name = "ptbAddSuco";
@@ -837,6 +851,7 @@
             // 
             // ptbExcGuarana
             // 
+            this.ptbExcGuarana.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcGuarana.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcGuarana.Image")));
             this.ptbExcGuarana.Location = new System.Drawing.Point(12, 8);
             this.ptbExcGuarana.Name = "ptbExcGuarana";
@@ -848,6 +863,7 @@
             // 
             // ptbAddGuarana
             // 
+            this.ptbAddGuarana.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddGuarana.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddGuarana.Image")));
             this.ptbAddGuarana.Location = new System.Drawing.Point(67, 8);
             this.ptbAddGuarana.Name = "ptbAddGuarana";
@@ -913,6 +929,7 @@
             // 
             // ptbExcPepsi
             // 
+            this.ptbExcPepsi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcPepsi.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcPepsi.Image")));
             this.ptbExcPepsi.Location = new System.Drawing.Point(12, 8);
             this.ptbExcPepsi.Name = "ptbExcPepsi";
@@ -924,6 +941,7 @@
             // 
             // ptbAddPepsi
             // 
+            this.ptbAddPepsi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddPepsi.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddPepsi.Image")));
             this.ptbAddPepsi.Location = new System.Drawing.Point(67, 8);
             this.ptbAddPepsi.Name = "ptbAddPepsi";
@@ -989,6 +1007,7 @@
             // 
             // ptbExcCoca
             // 
+            this.ptbExcCoca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcCoca.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcCoca.Image")));
             this.ptbExcCoca.Location = new System.Drawing.Point(12, 8);
             this.ptbExcCoca.Name = "ptbExcCoca";
@@ -1000,6 +1019,7 @@
             // 
             // ptbAddCoca
             // 
+            this.ptbAddCoca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddCoca.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddCoca.Image")));
             this.ptbAddCoca.Location = new System.Drawing.Point(67, 8);
             this.ptbAddCoca.Name = "ptbAddCoca";
@@ -1065,6 +1085,7 @@
             // 
             // ptbExcFanta
             // 
+            this.ptbExcFanta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcFanta.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcFanta.Image")));
             this.ptbExcFanta.Location = new System.Drawing.Point(12, 8);
             this.ptbExcFanta.Name = "ptbExcFanta";
@@ -1076,6 +1097,7 @@
             // 
             // ptbAddFanta
             // 
+            this.ptbAddFanta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddFanta.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddFanta.Image")));
             this.ptbAddFanta.Location = new System.Drawing.Point(67, 8);
             this.ptbAddFanta.Name = "ptbAddFanta";
@@ -1141,6 +1163,7 @@
             // 
             // ptbExcSprite
             // 
+            this.ptbExcSprite.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbExcSprite.Image = ((System.Drawing.Image)(resources.GetObject("ptbExcSprite.Image")));
             this.ptbExcSprite.Location = new System.Drawing.Point(12, 8);
             this.ptbExcSprite.Name = "ptbExcSprite";
@@ -1152,6 +1175,7 @@
             // 
             // ptbAddSprite
             // 
+            this.ptbAddSprite.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAddSprite.Image = ((System.Drawing.Image)(resources.GetObject("ptbAddSprite.Image")));
             this.ptbAddSprite.Location = new System.Drawing.Point(67, 8);
             this.ptbAddSprite.Name = "ptbAddSprite";
