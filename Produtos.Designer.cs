@@ -768,6 +768,7 @@
             this.ptbExcSuco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbExcSuco.TabIndex = 100011;
             this.ptbExcSuco.TabStop = false;
+            this.ptbExcSuco.Click += new System.EventHandler(this.ptbExcSuco_Click);
             // 
             // ptbAddSuco
             // 
@@ -778,6 +779,7 @@
             this.ptbAddSuco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAddSuco.TabIndex = 100010;
             this.ptbAddSuco.TabStop = false;
+            this.ptbAddSuco.Click += new System.EventHandler(this.ptbAddSuco_Click);
             // 
             // lblBebidaSuco
             // 
@@ -842,6 +844,7 @@
             this.ptbExcGuarana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbExcGuarana.TabIndex = 100011;
             this.ptbExcGuarana.TabStop = false;
+            this.ptbExcGuarana.Click += new System.EventHandler(this.ptbExcGuarana_Click);
             // 
             // ptbAddGuarana
             // 
@@ -852,6 +855,7 @@
             this.ptbAddGuarana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAddGuarana.TabIndex = 100010;
             this.ptbAddGuarana.TabStop = false;
+            this.ptbAddGuarana.Click += new System.EventHandler(this.ptbAddGuarana_Click);
             // 
             // lblBebidaGuarana
             // 
@@ -916,6 +920,7 @@
             this.ptbExcPepsi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbExcPepsi.TabIndex = 100011;
             this.ptbExcPepsi.TabStop = false;
+            this.ptbExcPepsi.Click += new System.EventHandler(this.ptbExcPepsi_Click);
             // 
             // ptbAddPepsi
             // 
@@ -926,6 +931,7 @@
             this.ptbAddPepsi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAddPepsi.TabIndex = 100010;
             this.ptbAddPepsi.TabStop = false;
+            this.ptbAddPepsi.Click += new System.EventHandler(this.ptbAddPepsi_Click);
             // 
             // lblBebidaPepsi
             // 
@@ -990,6 +996,7 @@
             this.ptbExcCoca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbExcCoca.TabIndex = 100011;
             this.ptbExcCoca.TabStop = false;
+            this.ptbExcCoca.Click += new System.EventHandler(this.ptbExcCoca_Click);
             // 
             // ptbAddCoca
             // 
@@ -1000,6 +1007,7 @@
             this.ptbAddCoca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAddCoca.TabIndex = 100010;
             this.ptbAddCoca.TabStop = false;
+            this.ptbAddCoca.Click += new System.EventHandler(this.ptbAddCoca_Click);
             // 
             // lblBebidaCoca
             // 
@@ -1064,6 +1072,7 @@
             this.ptbExcFanta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbExcFanta.TabIndex = 100011;
             this.ptbExcFanta.TabStop = false;
+            this.ptbExcFanta.Click += new System.EventHandler(this.ptbExcFanta_Click);
             // 
             // ptbAddFanta
             // 
@@ -1074,6 +1083,7 @@
             this.ptbAddFanta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAddFanta.TabIndex = 100010;
             this.ptbAddFanta.TabStop = false;
+            this.ptbAddFanta.Click += new System.EventHandler(this.ptbAddFanta_Click);
             // 
             // lblBebidaFanta
             // 
@@ -1138,6 +1148,7 @@
             this.ptbExcSprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbExcSprite.TabIndex = 100011;
             this.ptbExcSprite.TabStop = false;
+            this.ptbExcSprite.Click += new System.EventHandler(this.ptbExcSprite_Click);
             // 
             // ptbAddSprite
             // 
@@ -1148,6 +1159,7 @@
             this.ptbAddSprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAddSprite.TabIndex = 100010;
             this.ptbAddSprite.TabStop = false;
+            this.ptbAddSprite.Click += new System.EventHandler(this.ptbAddSprite_Click);
             // 
             // lblBebidaSprite
             // 

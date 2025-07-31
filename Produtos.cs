@@ -149,7 +149,6 @@ namespace MenuLateralHamburgueria
             }
         }
 
-
         /** Adicionar e remover valor - MILÃO */
         private int contaQuantidadeMilao = 0;
         private void ptbAddMilao_Click(object sender, EventArgs e)
@@ -174,6 +173,169 @@ namespace MenuLateralHamburgueria
             {
                 contaQuantidadeMilao -= 1;
                 mtbQuantidadeMilao.Text = Convert.ToString(contaQuantidadeMilao);
+            }
+        }
+
+
+        /** Adicionar e remover valor - SPRITE */
+        private int contaQuantidadeSprite = 0;
+        private void ptbAddSprite_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadeSprite < 10)
+            {
+                contaQuantidadeSprite += 1;
+                mtbQuatidadeSprite.Text = Convert.ToString(contaQuantidadeSprite);
+            }
+            else
+            {
+                MessageBox.Show("Quantidade máxima atingida!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        private void ptbExcSprite_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadeSprite <= 0)
+            {
+                MessageBox.Show("Quantidade não informada!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                contaQuantidadeSprite -= 1;
+                mtbQuatidadeSprite.Text = Convert.ToString(contaQuantidadeSprite);
+            }
+        }
+
+        /** Adicionar e remover valor - FANTA */
+        private int contaQuantidadeFanta = 0;
+        private void ptbAddFanta_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadeFanta < 10)
+            {
+                contaQuantidadeFanta += 1;
+                mtbQuantidadeFanta.Text = Convert.ToString(contaQuantidadeFanta);
+            }
+            else
+            {
+                MessageBox.Show("Quantidade máxima atingida!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        private void ptbExcFanta_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadeFanta <= 0)
+            {
+                MessageBox.Show("Quantidade não informada!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                contaQuantidadeFanta -= 1;
+                mtbQuantidadeFanta.Text = Convert.ToString(contaQuantidadeFanta);
+            }
+        }
+
+        /** Adicionar e remover valor - COCA-COLA */
+        private int contaQuantidadeCoca = 0;
+        private void ptbAddCoca_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadeCoca < 10)
+            {
+                contaQuantidadeCoca += 1;
+                mtbQuantidadeCoca.Text = Convert.ToString(contaQuantidadeCoca);
+            }
+            else
+            {
+                MessageBox.Show("Quantidade máxima atingida!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        private void ptbExcCoca_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadeCoca <= 0)
+            {
+                MessageBox.Show("Quantidade não informada!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                contaQuantidadeCoca -= 1;
+                mtbQuantidadeCoca.Text = Convert.ToString(contaQuantidadeCoca);
+            }
+        }
+
+        /** Adicionar e remover valor - PEPSI */
+        private int contaQuantidadePepsi = 0;
+        private void ptbAddPepsi_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadePepsi < 10)
+            {
+                contaQuantidadePepsi += 1;
+                mtbQuantidadePepsi.Text = Convert.ToString(contaQuantidadePepsi);
+            }
+            else
+            {
+                MessageBox.Show("Quantidade máxima atingida!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        private void ptbExcPepsi_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadePepsi <= 0)
+            {
+                MessageBox.Show("Quantidade não informada!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                contaQuantidadePepsi -= 1;
+                mtbQuantidadePepsi.Text = Convert.ToString(contaQuantidadePepsi);
+            }
+        }
+
+        /** Adicionar e remover valor - GUARANA */
+        private int contaQuantidadeGuarana = 0;
+        private void ptbAddGuarana_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadeGuarana < 10)
+            {
+                contaQuantidadeGuarana += 1;
+                mtbQuantidadeGuarana.Text = Convert.ToString(contaQuantidadeGuarana);
+            }
+            else
+            {
+                MessageBox.Show("Quantidade máxima atingida!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        private void ptbExcGuarana_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadeGuarana <= 0)
+            {
+                MessageBox.Show("Quantidade não informada!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                contaQuantidadeGuarana -= 1;
+                mtbQuantidadeGuarana.Text = Convert.ToString(contaQuantidadeGuarana);
+            }
+        }
+
+        /** Adicionar e remover valor - SUCO */
+        private int contaQuantidadeSuco = 0;
+        private void ptbAddSuco_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadeSuco < 10)
+            {
+                contaQuantidadeSuco += 1;
+                mtbQuantidadeSuco.Text = Convert.ToString(contaQuantidadeSuco);
+            }
+            else
+            {
+                MessageBox.Show("Quantidade máxima atingida!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        private void ptbExcSuco_Click(object sender, EventArgs e)
+        {
+            if (contaQuantidadeSuco <= 0)
+            {
+                MessageBox.Show("Quantidade não informada!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                contaQuantidadeSuco -= 1;
+                mtbQuantidadeSuco.Text = Convert.ToString(contaQuantidadeSuco);
             }
         }
     }
