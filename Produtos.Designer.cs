@@ -34,7 +34,6 @@
             this.imgLancheMilao = new System.Windows.Forms.PictureBox();
             this.lblLanches = new System.Windows.Forms.Label();
             this.lblBebidas = new System.Windows.Forms.Label();
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.pnlLancheMiami = new System.Windows.Forms.Panel();
             this.pnlControlesLancheMiami = new System.Windows.Forms.Panel();
             this.mtbQuantidadeMiami = new System.Windows.Forms.MaskedTextBox();
@@ -196,7 +195,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(719, 67);
+            this.panelLogo.Size = new System.Drawing.Size(840, 67);
             this.panelLogo.TabIndex = 1;
             // 
             // label2
@@ -223,7 +222,7 @@
             // 
             this.lblLanches.AutoSize = true;
             this.lblLanches.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLanches.Location = new System.Drawing.Point(23, 143);
+            this.lblLanches.Location = new System.Drawing.Point(12, 143);
             this.lblLanches.Name = "lblLanches";
             this.lblLanches.Size = new System.Drawing.Size(118, 25);
             this.lblLanches.TabIndex = 100003;
@@ -233,19 +232,11 @@
             // 
             this.lblBebidas.AutoSize = true;
             this.lblBebidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBebidas.Location = new System.Drawing.Point(23, 342);
+            this.lblBebidas.Location = new System.Drawing.Point(12, 343);
             this.lblBebidas.Name = "lblBebidas";
             this.lblBebidas.Size = new System.Drawing.Size(109, 25);
             this.lblBebidas.TabIndex = 100004;
             this.lblBebidas.Text = "BEBIDAS";
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(0, 67);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 530);
-            this.splitter1.TabIndex = 100005;
-            this.splitter1.TabStop = false;
             // 
             // pnlLancheMiami
             // 
@@ -568,7 +559,7 @@
             this.pnlLanches.Controls.Add(this.pnlLancheDetroit);
             this.pnlLanches.Controls.Add(this.pnlLancheNovaYork);
             this.pnlLanches.Controls.Add(this.pnlLancheMiami);
-            this.pnlLanches.Location = new System.Drawing.Point(28, 171);
+            this.pnlLanches.Location = new System.Drawing.Point(17, 171);
             this.pnlLanches.Name = "pnlLanches";
             this.pnlLanches.Size = new System.Drawing.Size(653, 160);
             this.pnlLanches.TabIndex = 100043;
@@ -726,7 +717,7 @@
             this.pnlBebidas.Controls.Add(this.pnlBebidaCoca);
             this.pnlBebidas.Controls.Add(this.pnlBebidaFanta);
             this.pnlBebidas.Controls.Add(this.pnlBebidaSprite);
-            this.pnlBebidas.Location = new System.Drawing.Point(28, 370);
+            this.pnlBebidas.Location = new System.Drawing.Point(17, 371);
             this.pnlBebidas.Name = "pnlBebidas";
             this.pnlBebidas.Size = new System.Drawing.Size(653, 160);
             this.pnlBebidas.TabIndex = 100045;
@@ -1208,20 +1199,20 @@
             this.btnRegistrarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarPedido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarPedido.ForeColor = System.Drawing.Color.LimeGreen;
-            this.btnRegistrarPedido.Location = new System.Drawing.Point(536, 547);
+            this.btnRegistrarPedido.Location = new System.Drawing.Point(673, 492);
             this.btnRegistrarPedido.Margin = new System.Windows.Forms.Padding(0);
             this.btnRegistrarPedido.Name = "btnRegistrarPedido";
-            this.btnRegistrarPedido.Size = new System.Drawing.Size(145, 39);
+            this.btnRegistrarPedido.Size = new System.Drawing.Size(154, 39);
             this.btnRegistrarPedido.TabIndex = 100046;
             this.btnRegistrarPedido.Text = "Registrar Pedido";
             this.btnRegistrarPedido.UseVisualStyleBackColor = false;
-            this.btnRegistrarPedido.Click += new System.EventHandler(this.btnRegistrarPedido_Click);
             // 
             // lblMesas
             // 
             this.lblMesas.AutoSize = true;
             this.lblMesas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMesas.Location = new System.Drawing.Point(23, 80);
+            this.lblMesas.Location = new System.Drawing.Point(12, 80);
+            this.lblMesas.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.lblMesas.Name = "lblMesas";
             this.lblMesas.Size = new System.Drawing.Size(76, 25);
             this.lblMesas.TabIndex = 100047;
@@ -1238,11 +1229,11 @@
             "002",
             "003",
             "004"});
-            this.cmbMesas.Location = new System.Drawing.Point(28, 108);
+            this.cmbMesas.Location = new System.Drawing.Point(17, 108);
             this.cmbMesas.Name = "cmbMesas";
             this.cmbMesas.Size = new System.Drawing.Size(202, 25);
             this.cmbMesas.TabIndex = 100048;
-            this.cmbMesas.Text = "Escolha uma mesa";
+            this.cmbMesas.Text = " Escolha uma opção";
             // 
             // btnLimparTudo
             // 
@@ -1253,10 +1244,10 @@
             this.btnLimparTudo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimparTudo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimparTudo.ForeColor = System.Drawing.Color.Red;
-            this.btnLimparTudo.Location = new System.Drawing.Point(28, 547);
+            this.btnLimparTudo.Location = new System.Drawing.Point(673, 108);
             this.btnLimparTudo.Margin = new System.Windows.Forms.Padding(0);
             this.btnLimparTudo.Name = "btnLimparTudo";
-            this.btnLimparTudo.Size = new System.Drawing.Size(145, 39);
+            this.btnLimparTudo.Size = new System.Drawing.Size(154, 39);
             this.btnLimparTudo.TabIndex = 100049;
             this.btnLimparTudo.Text = "Limpar";
             this.btnLimparTudo.UseVisualStyleBackColor = false;
@@ -1266,14 +1257,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(719, 597);
+            this.ClientSize = new System.Drawing.Size(840, 549);
             this.Controls.Add(this.btnLimparTudo);
             this.Controls.Add(this.cmbMesas);
             this.Controls.Add(this.lblMesas);
             this.Controls.Add(this.btnRegistrarPedido);
             this.Controls.Add(this.pnlBebidas);
             this.Controls.Add(this.pnlLanches);
-            this.Controls.Add(this.splitter1);
             this.Controls.Add(this.lblBebidas);
             this.Controls.Add(this.lblLanches);
             this.Controls.Add(this.panelLogo);
@@ -1367,7 +1357,6 @@
         private System.Windows.Forms.PictureBox imgLancheMilao;
         private System.Windows.Forms.Label lblLanches;
         private System.Windows.Forms.Label lblBebidas;
-        private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Panel pnlLancheMiami;
         private System.Windows.Forms.Panel pnlControlesLancheMiami;
         private System.Windows.Forms.MaskedTextBox mtbQuantidadeMiami;

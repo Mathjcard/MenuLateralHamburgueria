@@ -338,12 +338,5 @@ namespace MenuLateralHamburgueria
                 mtbQuantidadeSuco.Text = Convert.ToString(contaQuantidadeSuco);
             }
         }
-
-        private void btnRegistrarPedido_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chegando no registrar pedido" + cmbMesas.Text);
-
-            
-        }
     }
 }

@@ -56,7 +56,7 @@
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelPrincipal.Location = new System.Drawing.Point(0, 0);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(202, 607);
+            this.panelPrincipal.Size = new System.Drawing.Size(202, 666);
             this.panelPrincipal.TabIndex = 0;
             // 
             // button4
@@ -71,7 +71,7 @@
             this.button4.ForeColor = System.Drawing.Color.Orange;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 565);
+            this.button4.Location = new System.Drawing.Point(0, 624);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(202, 45);
             this.button4.TabIndex = 5;
@@ -200,14 +200,14 @@
             this.panelCentro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCentro.Location = new System.Drawing.Point(202, 0);
             this.panelCentro.Name = "panelCentro";
-            this.panelCentro.Size = new System.Drawing.Size(918, 607);
+            this.panelCentro.Size = new System.Drawing.Size(970, 666);
             this.panelCentro.TabIndex = 1;
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1120, 607);
+            this.ClientSize = new System.Drawing.Size(1172, 666);
             this.Controls.Add(this.panelCentro);
             this.Controls.Add(this.panelPrincipal);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
