@@ -42,6 +42,8 @@ namespace MenuLateralHamburgueria
             }
 
                 MessageBox.Show("Senha alterada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+             this.Close();
         }
 
         private void boxSenha2_CheckedChanged(object sender, EventArgs e)
