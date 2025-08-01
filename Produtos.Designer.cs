@@ -144,7 +144,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(708, 67);
+            this.panelLogo.Size = new System.Drawing.Size(879, 67);
             this.panelLogo.TabIndex = 1;
             // 
             // label2
@@ -462,7 +462,7 @@
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 67);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 360);
+            this.splitter1.Size = new System.Drawing.Size(3, 414);
             this.splitter1.TabIndex = 100005;
             this.splitter1.TabStop = false;
             // 
@@ -796,7 +796,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(708, 427);
+            this.ClientSize = new System.Drawing.Size(879, 481);
             this.Controls.Add(this.pictureBox36);
             this.Controls.Add(this.pictureBox35);
             this.Controls.Add(this.pictureBox34);
