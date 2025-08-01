@@ -75,6 +75,7 @@
             this.boxSenha.TabIndex = 12;
             this.boxSenha.Text = "Visualizar Senha";
             this.boxSenha.UseVisualStyleBackColor = false;
+            this.boxSenha.CheckedChanged += new System.EventHandler(this.boxSenha_CheckedChanged);
             // 
             // lblEsquciSenha
             // 
