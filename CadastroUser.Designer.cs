@@ -39,12 +39,12 @@
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtNomeUser = new System.Windows.Forms.TextBox();
             this.lblCargo = new System.Windows.Forms.Label();
-            this.txtCargo = new System.Windows.Forms.TextBox();
             this.lblNomeUser = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblUsuarioNome = new System.Windows.Forms.Label();
+            this.txtCargo = new System.Windows.Forms.ComboBox();
             this.panelLogo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,9 +77,10 @@
             this.SenhaBox.Location = new System.Drawing.Point(210, 506);
             this.SenhaBox.Name = "SenhaBox";
             this.SenhaBox.Size = new System.Drawing.Size(121, 20);
-            this.SenhaBox.TabIndex = 26;
+            this.SenhaBox.TabIndex = 7;
             this.SenhaBox.Text = "Visualizar Senha ";
             this.SenhaBox.UseVisualStyleBackColor = false;
+            this.SenhaBox.CheckedChanged += new System.EventHandler(this.SenhaBox_CheckedChanged);
             // 
             // txtConfirmaSenha
             // 
@@ -87,7 +88,7 @@
             this.txtConfirmaSenha.Location = new System.Drawing.Point(210, 465);
             this.txtConfirmaSenha.Name = "txtConfirmaSenha";
             this.txtConfirmaSenha.Size = new System.Drawing.Size(380, 35);
-            this.txtConfirmaSenha.TabIndex = 24;
+            this.txtConfirmaSenha.TabIndex = 6;
             this.txtConfirmaSenha.UseSystemPasswordChar = true;
             // 
             // lblConfirmeSenhaCadastro
@@ -114,9 +115,10 @@
             this.btnCadastroUser.Location = new System.Drawing.Point(337, 541);
             this.btnCadastroUser.Name = "btnCadastroUser";
             this.btnCadastroUser.Size = new System.Drawing.Size(133, 39);
-            this.btnCadastroUser.TabIndex = 27;
+            this.btnCadastroUser.TabIndex = 8;
             this.btnCadastroUser.Text = "Cadastrar";
             this.btnCadastroUser.UseVisualStyleBackColor = false;
+            this.btnCadastroUser.Click += new System.EventHandler(this.btnCadastroUser_Click);
             // 
             // txtSenha
             // 
@@ -124,7 +126,7 @@
             this.txtSenha.Location = new System.Drawing.Point(210, 403);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(380, 35);
-            this.txtSenha.TabIndex = 22;
+            this.txtSenha.TabIndex = 5;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
             // lblSenha
@@ -145,7 +147,7 @@
             this.txtNomeUser.Location = new System.Drawing.Point(210, 323);
             this.txtNomeUser.Name = "txtNomeUser";
             this.txtNomeUser.Size = new System.Drawing.Size(380, 35);
-            this.txtNomeUser.TabIndex = 21;
+            this.txtNomeUser.TabIndex = 4;
             // 
             // lblCargo
             // 
@@ -158,14 +160,6 @@
             this.lblCargo.Size = new System.Drawing.Size(60, 21);
             this.lblCargo.TabIndex = 29;
             this.lblCargo.Text = "Cargo";
-            // 
-            // txtCargo
-            // 
-            this.txtCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCargo.Location = new System.Drawing.Point(210, 253);
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(380, 35);
-            this.txtCargo.TabIndex = 20;
             // 
             // lblNomeUser
             // 
@@ -185,7 +179,7 @@
             this.txtEmail.Location = new System.Drawing.Point(210, 183);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(380, 35);
-            this.txtEmail.TabIndex = 19;
+            this.txtEmail.TabIndex = 2;
             // 
             // txtLogin
             // 
@@ -193,7 +187,7 @@
             this.txtLogin.Location = new System.Drawing.Point(210, 115);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(380, 35);
-            this.txtLogin.TabIndex = 18;
+            this.txtLogin.TabIndex = 1;
             // 
             // lblEmail
             // 
@@ -219,6 +213,18 @@
             this.lblUsuarioNome.TabIndex = 23;
             this.lblUsuarioNome.Text = "Nome";
             // 
+            // txtCargo
+            // 
+            this.txtCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCargo.Items.AddRange(new object[] {
+            "Admin",
+            "Garçom"});
+            this.txtCargo.Location = new System.Drawing.Point(213, 253);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(377, 37);
+            this.txtCargo.TabIndex = 3;
+            // 
             // frmCadastroUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +232,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(792, 615);
+            this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.SenhaBox);
             this.Controls.Add(this.txtConfirmaSenha);
             this.Controls.Add(this.lblConfirmeSenhaCadastro);
@@ -234,7 +241,6 @@
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.txtNomeUser);
             this.Controls.Add(this.lblCargo);
-            this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.lblNomeUser);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtLogin);
@@ -263,11 +269,11 @@
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtNomeUser;
         private System.Windows.Forms.Label lblCargo;
-        private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.Label lblNomeUser;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblUsuarioNome;
+        public System.Windows.Forms.ComboBox txtCargo;
     }
 }
