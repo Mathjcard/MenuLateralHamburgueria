@@ -19,15 +19,21 @@ namespace MenuLateralHamburgueria
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            // Pula para o menu lateral sem validar nada
+            // Entra direto na tela de Menu Principal
             frmPrincipal telaMenu = new frmPrincipal();
             telaMenu.Show();
             this.Hide();
 
-            //VERIFICAÇÃO DE CAMPOS SE TEM ESPACO EM BRANCO
+            ////VERIFICAÇÃO DE CAMPOS E SE TEM ESPACO EM BRANCO
             //if (string.IsNullOrWhiteSpace(txtLogin.Text) || string.IsNullOrWhiteSpace(txtSenha.Text))
             //{
             //    MessageBox.Show("Por favor, preencha o Login e a Senha.", "Campos obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
+            ////VERIFICAÇÃO DE TAMANHO DA SENHA
+            //if (txtSenha.Text.Length < 6)
+            //{
+            //    MessageBox.Show("A senha deve ter no mínimo 6 caracteres.", "Senha inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             //    return;
             //}
 
@@ -43,6 +49,20 @@ namespace MenuLateralHamburgueria
         {
             frmCadastroUser frmCadastroUser = new frmCadastroUser();
             frmCadastroUser.ShowDialog();
+        }
+
+        private void boxSenha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (boxSenha.Checked)
+            {
+
+                txtSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+
+                txtSenha.UseSystemPasswordChar = true;
+            }
         }
     }
 }

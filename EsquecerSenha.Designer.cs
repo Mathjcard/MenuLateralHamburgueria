@@ -74,6 +74,7 @@
             this.boxSenha2.TabIndex = 26;
             this.boxSenha2.Text = "Visualizar Senha";
             this.boxSenha2.UseVisualStyleBackColor = false;
+            this.boxSenha2.CheckedChanged += new System.EventHandler(this.boxSenha2_CheckedChanged);
             // 
             // btnCadastroSenhaNova
             // 
@@ -90,6 +91,7 @@
             this.btnCadastroSenhaNova.TabIndex = 27;
             this.btnCadastroSenhaNova.Text = "Cadastrar Senha";
             this.btnCadastroSenhaNova.UseVisualStyleBackColor = false;
+            this.btnCadastroSenhaNova.Click += new System.EventHandler(this.btnCadastroSenhaNova_Click);
             // 
             // txtConfirmaNsenha
             // 
