@@ -14,5 +14,10 @@ namespace MenuLateralHamburgueria.Controller
         {
             FuncionarioDAO.Inserir(funcionario);
         }
+
+        public void AtualizarSenhaFuncionario(Funcionarios funcionario)
+        {
+            FuncionarioDAO.Atualizar(funcionario);
+        }
     }
 }

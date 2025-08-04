@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MenuLateralHamburgueria.Controller;
+using MenuLateralHamburgueria.Models;
 
 namespace MenuLateralHamburgueria
 {
     public partial class frmEsquecerSenha : Form
     {
+        private readonly FuncionarioController funcionarioController = new FuncionarioController();
         public frmEsquecerSenha()
         {
             InitializeComponent();
@@ -34,16 +37,30 @@ namespace MenuLateralHamburgueria
                 return;
             }
 
-                // Verificar se as senhas conferem
-                if (txtNovaSenha.Text != txtConfirmaNsenha.Text)
+            // Verificar se as senhas conferem
+            if (txtNovaSenha.Text != txtConfirmaNsenha.Text)
             {
                 MessageBox.Show("As senhas não conferem. Tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
+            var funcionario = new Funcionarios
+            {
+                NomeUsuario = txtUser.Text,
+                Senha = txtNovaSenha.Text,
+            };
+
+            try
+            {
+                funcionarioController.AtualizarSenhaFuncionario(funcionario);
+
                 MessageBox.Show("Senha alterada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-             this.Close();
+                this.Close();
+            } catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao tentar alterar senha do funcionario: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void boxSenha2_CheckedChanged(object sender, EventArgs e)

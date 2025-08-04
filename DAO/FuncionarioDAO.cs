@@ -27,5 +27,20 @@ namespace MenuLateralHamburgueria.DAO
 
             command.ExecuteNonQuery();
         }
+
+        public static void Atualizar(Funcionarios funcionario) 
+        {
+            var conexao = Conexao.ObterConexao();
+            conexao.Open();
+
+            var sql = "UPDATE funcionarios SET senha=@senha WHERE nome_usuario=@nome_usuario";
+
+            var command = new SqlCommand(sql, conexao);
+
+            command.Parameters.AddWithValue("@nome_usuario", funcionario.NomeUsuario);
+            command.Parameters.AddWithValue("@senha", funcionario.Senha);
+
+            command.ExecuteNonQuery();
+        }
     }
 }
