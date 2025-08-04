@@ -9,11 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.IO;
+using MenuLateralHamburgueria.Controller;
+using MenuLateralHamburgueria.Models;
 
 namespace MenuLateralHamburgueria
 {
     public partial class frmCadastroUser : Form
     {
+        private readonly FuncionarioController funcionarioController = new FuncionarioController();
+
         public frmCadastroUser()
         {
             InitializeComponent();
@@ -53,7 +57,28 @@ namespace MenuLateralHamburgueria
                 return;
             }
 
-            MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            var funcionario = new Funcionarios
+            {
+                Nome = txtLogin.Text,
+                NomeUsuario = txtNomeUser.Text,
+                Email = txtEmail.Text,
+                Senha = txtSenha.Text,
+                Cargo = txtCargo.Text,
+            };
+
+            try
+            {
+                funcionarioController.SalvarFuncionario(funcionario);
+
+                MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Close();
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show($"Erro ao salvar funcionario: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private bool IsValidEmail(string email)

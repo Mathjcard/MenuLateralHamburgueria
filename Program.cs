@@ -17,7 +17,7 @@ namespace MenuLateralHamburgueria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new testeCadFuncionarios());
+            Application.Run(new frmLogin());
         }
     }
 }
