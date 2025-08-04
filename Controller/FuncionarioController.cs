@@ -19,5 +19,10 @@ namespace MenuLateralHamburgueria.Controller
         {
             FuncionarioDAO.Atualizar(funcionario);
         }
+
+        public List<Funcionarios> AutenticacaoLogin(string NomeUsuario, string Senha)
+        {
+            return FuncionarioDAO.Selecionar(NomeUsuario, Senha);
+        }
     }
 }

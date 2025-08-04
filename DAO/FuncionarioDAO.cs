@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using MenuLateralHamburgueria.Models;
 using MenuLateralHamburgueria.Utils;
 
@@ -41,6 +42,40 @@ namespace MenuLateralHamburgueria.DAO
             command.Parameters.AddWithValue("@senha", funcionario.Senha);
 
             command.ExecuteNonQuery();
+        }
+
+        public static List<Funcionarios> Selecionar(string NomeUsuario, string Senha)
+        {
+            var lista = new List<Funcionarios>();
+
+            var conexao = Conexao.ObterConexao();
+            conexao.Open();
+
+            var sql = "SELECT * FROM funcionarios WHERE nome_usuario=@nome_usuario AND senha=@senha";
+
+            var command = new SqlCommand (sql, conexao);
+
+            command.Parameters.AddWithValue("@nome_usuario", NomeUsuario);
+            command.Parameters.AddWithValue("@senha", Senha);
+
+            var reader = command.ExecuteReader();  /** Executa o comando SQL */
+
+            /** Preparando as linhas do grid */
+            while (reader.Read()) /** Enquanto o comando tiver um valor que não foi lido, continua a execução */
+            {
+                lista.Add(new Funcionarios
+                {
+                    Id = (int)reader["id"],
+                    Nome = reader["nome"].ToString(),
+                    NomeUsuario = reader["nome_usuario"].ToString(),
+                    Email = reader["email"].ToString(),
+                    Senha = reader["senha"].ToString(),
+                    Cargo = reader["cargo"].ToString(),
+                });
+            }
+
+            return lista;
+
         }
     }
 }
