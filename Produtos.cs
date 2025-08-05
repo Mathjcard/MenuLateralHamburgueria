@@ -17,8 +17,11 @@ namespace MenuLateralHamburgueria
             InitializeComponent();
         }
 
+        
         /** Adicionar e remover valor - MIAMI */
         private int contaQuantidadeMiami = 0;
+        private int contaQuantidadeNovaYork;
+
         private void ptbAddMiami_Click(object sender, EventArgs e)
         {
             if (contaQuantidadeMiami < 10)
@@ -75,7 +78,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadeDetroit < 10)
             {
                 contaQuantidadeDetroit += 1;
-                mtdQuantidadeDetroit.Text = Convert.ToString(contaQuantidadeDetroit);
+                mtbQuantidadeDetroit.Text = Convert.ToString(contaQuantidadeDetroit);
             }
             else
             {
@@ -91,7 +94,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadeDetroit -= 1;
-                mtdQuantidadeDetroit.Text = Convert.ToString(contaQuantidadeDetroit);
+                mtbQuantidadeDetroit.Text = Convert.ToString(contaQuantidadeDetroit);
             }
         }
 
@@ -184,7 +187,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadeSprite < 10)
             {
                 contaQuantidadeSprite += 1;
-                mtbQuatidadeSprite.Text = Convert.ToString(contaQuantidadeSprite);
+                mtbQuantidadeSprite.Text = Convert.ToString(contaQuantidadeSprite);
             }
             else
             {
@@ -200,7 +203,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadeSprite -= 1;
-                mtbQuatidadeSprite.Text = Convert.ToString(contaQuantidadeSprite);
+                mtbQuantidadeSprite.Text = Convert.ToString(contaQuantidadeSprite);
             }
         }
 
@@ -337,6 +340,47 @@ namespace MenuLateralHamburgueria
                 contaQuantidadeSuco -= 1;
                 mtbQuantidadeSuco.Text = Convert.ToString(contaQuantidadeSuco);
             }
+        }
+
+        private void btnLimparTudo_Click(object sender, EventArgs e)
+        {
+            LimparMaskedTextBoxes(this);
+            // Zerar os contadores dos lanches
+            contaQuantidadeMiami = 0;
+            contaQuantidadeNy = 0;
+            contaQuantidadeDetroit = 0;
+            contaQuantidadeAmazonas = 0;
+            contaQuantidadePaulista = 0;
+            contaQuantidadeMilao = 0;
+            // Zerar os contadores dos refrigerantes
+            contaQuantidadeSprite = 0;
+            contaQuantidadeFanta = 0;
+            contaQuantidadeCoca = 0;
+            contaQuantidadePepsi = 0;
+            contaQuantidadeGuarana = 0;
+            contaQuantidadeSuco = 0;
+        }
+
+        private void LimparMaskedTextBoxes(Control parent)
+        {
+            foreach (Control ctrl in parent.Controls)
+            {
+                if (ctrl is MaskedTextBox && ctrl.Name.StartsWith("mtbQuantidade"))
+                {
+                    ((MaskedTextBox)ctrl).Text = "0";
+                }
+
+                // Se tiver filhos, chama recursivamente
+                if (ctrl.HasChildren)
+                {
+                    LimparMaskedTextBoxes(ctrl);
+                }
+            }
+        }
+
+        private void frmProdutos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

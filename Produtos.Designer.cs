@@ -51,7 +51,7 @@
             this.pnlLancheDetroit = new System.Windows.Forms.Panel();
             this.imgLancheDetroit = new System.Windows.Forms.PictureBox();
             this.pnlControlesLancheDetroit = new System.Windows.Forms.Panel();
-            this.mtdQuantidadeDetroit = new System.Windows.Forms.MaskedTextBox();
+            this.mtbQuantidadeDetroit = new System.Windows.Forms.MaskedTextBox();
             this.ptbExcDetroit = new System.Windows.Forms.PictureBox();
             this.ptbAddDetroit = new System.Windows.Forms.PictureBox();
             this.lblLancheDetroit = new System.Windows.Forms.Label();
@@ -115,7 +115,7 @@
             this.pnlBebidaSprite = new System.Windows.Forms.Panel();
             this.imgBebidaSprite = new System.Windows.Forms.PictureBox();
             this.pnlControlesSprite = new System.Windows.Forms.Panel();
-            this.mtbQuatidadeSprite = new System.Windows.Forms.MaskedTextBox();
+            this.mtbQuantidadeSprite = new System.Windows.Forms.MaskedTextBox();
             this.ptbExcSprite = new System.Windows.Forms.PictureBox();
             this.ptbAddSprite = new System.Windows.Forms.PictureBox();
             this.lblBebidaSprite = new System.Windows.Forms.Label();
@@ -418,7 +418,7 @@
             // 
             // pnlControlesLancheDetroit
             // 
-            this.pnlControlesLancheDetroit.Controls.Add(this.mtdQuantidadeDetroit);
+            this.pnlControlesLancheDetroit.Controls.Add(this.mtbQuantidadeDetroit);
             this.pnlControlesLancheDetroit.Controls.Add(this.ptbExcDetroit);
             this.pnlControlesLancheDetroit.Controls.Add(this.ptbAddDetroit);
             this.pnlControlesLancheDetroit.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -427,16 +427,16 @@
             this.pnlControlesLancheDetroit.Size = new System.Drawing.Size(98, 34);
             this.pnlControlesLancheDetroit.TabIndex = 100007;
             // 
-            // mtdQuantidadeDetroit
+            // mtbQuantidadeDetroit
             // 
-            this.mtdQuantidadeDetroit.Location = new System.Drawing.Point(35, 8);
-            this.mtdQuantidadeDetroit.Mask = "000";
-            this.mtdQuantidadeDetroit.Name = "mtdQuantidadeDetroit";
-            this.mtdQuantidadeDetroit.ReadOnly = true;
-            this.mtdQuantidadeDetroit.Size = new System.Drawing.Size(29, 20);
-            this.mtdQuantidadeDetroit.TabIndex = 100012;
-            this.mtdQuantidadeDetroit.Text = "0";
-            this.mtdQuantidadeDetroit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbQuantidadeDetroit.Location = new System.Drawing.Point(35, 8);
+            this.mtbQuantidadeDetroit.Mask = "000";
+            this.mtbQuantidadeDetroit.Name = "mtbQuantidadeDetroit";
+            this.mtbQuantidadeDetroit.ReadOnly = true;
+            this.mtbQuantidadeDetroit.Size = new System.Drawing.Size(29, 20);
+            this.mtbQuantidadeDetroit.TabIndex = 100012;
+            this.mtbQuantidadeDetroit.Text = "0";
+            this.mtbQuantidadeDetroit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ptbExcDetroit
             // 
@@ -1136,7 +1136,7 @@
             // 
             // pnlControlesSprite
             // 
-            this.pnlControlesSprite.Controls.Add(this.mtbQuatidadeSprite);
+            this.pnlControlesSprite.Controls.Add(this.mtbQuantidadeSprite);
             this.pnlControlesSprite.Controls.Add(this.ptbExcSprite);
             this.pnlControlesSprite.Controls.Add(this.ptbAddSprite);
             this.pnlControlesSprite.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -1145,16 +1145,16 @@
             this.pnlControlesSprite.Size = new System.Drawing.Size(98, 34);
             this.pnlControlesSprite.TabIndex = 100007;
             // 
-            // mtbQuatidadeSprite
+            // mtbQuantidadeSprite
             // 
-            this.mtbQuatidadeSprite.Location = new System.Drawing.Point(35, 8);
-            this.mtbQuatidadeSprite.Mask = "000";
-            this.mtbQuatidadeSprite.Name = "mtbQuatidadeSprite";
-            this.mtbQuatidadeSprite.ReadOnly = true;
-            this.mtbQuatidadeSprite.Size = new System.Drawing.Size(29, 20);
-            this.mtbQuatidadeSprite.TabIndex = 100012;
-            this.mtbQuatidadeSprite.Text = "0";
-            this.mtbQuatidadeSprite.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbQuantidadeSprite.Location = new System.Drawing.Point(35, 8);
+            this.mtbQuantidadeSprite.Mask = "000";
+            this.mtbQuantidadeSprite.Name = "mtbQuantidadeSprite";
+            this.mtbQuantidadeSprite.ReadOnly = true;
+            this.mtbQuantidadeSprite.Size = new System.Drawing.Size(29, 20);
+            this.mtbQuantidadeSprite.TabIndex = 100012;
+            this.mtbQuantidadeSprite.Text = "0";
+            this.mtbQuantidadeSprite.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ptbExcSprite
             // 
@@ -1195,10 +1195,10 @@
             this.btnRegistrarPedido.BackColor = System.Drawing.Color.Transparent;
             this.btnRegistrarPedido.FlatAppearance.BorderSize = 0;
             this.btnRegistrarPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnRegistrarPedido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnRegistrarPedido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
             this.btnRegistrarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarPedido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarPedido.ForeColor = System.Drawing.Color.LimeGreen;
+            this.btnRegistrarPedido.ForeColor = System.Drawing.Color.DarkGreen;
             this.btnRegistrarPedido.Location = new System.Drawing.Point(673, 492);
             this.btnRegistrarPedido.Margin = new System.Windows.Forms.Padding(0);
             this.btnRegistrarPedido.Name = "btnRegistrarPedido";
@@ -1220,9 +1220,12 @@
             // 
             // cmbMesas
             // 
-            this.cmbMesas.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbMesas.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
-            this.cmbMesas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.75F);
+            this.cmbMesas.BackColor = System.Drawing.Color.Bisque;
+            this.cmbMesas.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.cmbMesas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMesas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbMesas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMesas.ImeMode = System.Windows.Forms.ImeMode.Close;
             this.cmbMesas.Items.AddRange(new object[] {
             "001",
@@ -1231,16 +1234,16 @@
             "004"});
             this.cmbMesas.Location = new System.Drawing.Point(17, 108);
             this.cmbMesas.Name = "cmbMesas";
-            this.cmbMesas.Size = new System.Drawing.Size(202, 25);
+            this.cmbMesas.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbMesas.Size = new System.Drawing.Size(287, 32);
             this.cmbMesas.TabIndex = 100048;
-            this.cmbMesas.Text = " Escolha uma opção";
             // 
             // btnLimparTudo
             // 
             this.btnLimparTudo.BackColor = System.Drawing.Color.Transparent;
             this.btnLimparTudo.FlatAppearance.BorderSize = 0;
             this.btnLimparTudo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnLimparTudo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnLimparTudo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
             this.btnLimparTudo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimparTudo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimparTudo.ForeColor = System.Drawing.Color.Red;
@@ -1251,6 +1254,7 @@
             this.btnLimparTudo.TabIndex = 100049;
             this.btnLimparTudo.Text = "Limpar";
             this.btnLimparTudo.UseVisualStyleBackColor = false;
+            this.btnLimparTudo.Click += new System.EventHandler(this.btnLimparTudo_Click);
             // 
             // frmProdutos
             // 
@@ -1269,6 +1273,7 @@
             this.Controls.Add(this.panelLogo);
             this.Name = "frmProdutos";
             this.Text = "PRODUTOS";
+            this.Load += new System.EventHandler(this.frmProdutos_Load);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLancheMilao)).EndInit();
@@ -1374,7 +1379,7 @@
         private System.Windows.Forms.Panel pnlLancheDetroit;
         private System.Windows.Forms.PictureBox imgLancheDetroit;
         private System.Windows.Forms.Panel pnlControlesLancheDetroit;
-        private System.Windows.Forms.MaskedTextBox mtdQuantidadeDetroit;
+        private System.Windows.Forms.MaskedTextBox mtbQuantidadeDetroit;
         private System.Windows.Forms.PictureBox ptbExcDetroit;
         private System.Windows.Forms.PictureBox ptbAddDetroit;
         private System.Windows.Forms.Label lblLancheDetroit;
@@ -1432,7 +1437,7 @@
         private System.Windows.Forms.Label lblBebidaFanta;
         private System.Windows.Forms.Panel pnlBebidaSprite;
         private System.Windows.Forms.Panel pnlControlesSprite;
-        private System.Windows.Forms.MaskedTextBox mtbQuatidadeSprite;
+        private System.Windows.Forms.MaskedTextBox mtbQuantidadeSprite;
         private System.Windows.Forms.PictureBox ptbExcSprite;
         private System.Windows.Forms.PictureBox ptbAddSprite;
         private System.Windows.Forms.Label lblBebidaSprite;

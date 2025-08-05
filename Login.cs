@@ -20,9 +20,10 @@ namespace MenuLateralHamburgueria
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             // Entra direto na tela de Menu Principal
-            frmPrincipal telaMenu = new frmPrincipal();
-            telaMenu.Show();
             this.Hide();
+            new frmPrincipal().ShowDialog();
+            this.Close();
+
 
             ////VERIFICAÇÃO DE CAMPOS E SE TEM ESPACO EM BRANCO
             //if (string.IsNullOrWhiteSpace(txtLogin.Text) || string.IsNullOrWhiteSpace(txtSenha.Text))
