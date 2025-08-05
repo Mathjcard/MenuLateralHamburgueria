@@ -54,6 +54,8 @@ namespace MenuLateralHamburgueria
             }
 
             MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+            Close();
         }
 
         private bool IsValidEmail(string email)
