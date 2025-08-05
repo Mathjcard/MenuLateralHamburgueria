@@ -225,6 +225,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\LoginService.cs" />
     <Compile Include="Utils\Conexao.cs" />
     <Compile Include="Views\testeConexao.cs">
       <SubType>Form</SubType>

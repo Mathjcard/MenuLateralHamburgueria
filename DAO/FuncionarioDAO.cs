@@ -11,7 +11,7 @@ namespace MenuLateralHamburgueria.DAO
 {
     public static class FuncionarioDAO
     {
-        public static void Inserir(Funcionarios funcionario)
+        public static void Cadastrar(Funcionarios funcionario)
         {
             var conexao = Conexao.ObterConexao();
             conexao.Open();
@@ -29,7 +29,7 @@ namespace MenuLateralHamburgueria.DAO
             command.ExecuteNonQuery();
         }
 
-        public static void Atualizar(Funcionarios funcionario) 
+        public static void AtualizarSenha(Funcionarios funcionario) 
         {
             var conexao = Conexao.ObterConexao();
             conexao.Open();
@@ -44,7 +44,7 @@ namespace MenuLateralHamburgueria.DAO
             command.ExecuteNonQuery();
         }
 
-        public static List<Funcionarios> Selecionar(string NomeUsuario, string Senha)
+        public static List<Funcionarios> Autenticacao(string NomeUsuario, string Senha)
         {
             var lista = new List<Funcionarios>();
 
@@ -58,10 +58,9 @@ namespace MenuLateralHamburgueria.DAO
             command.Parameters.AddWithValue("@nome_usuario", NomeUsuario);
             command.Parameters.AddWithValue("@senha", Senha);
 
-            var reader = command.ExecuteReader();  /** Executa o comando SQL */
+            var reader = command.ExecuteReader();
 
-            /** Preparando as linhas do grid */
-            while (reader.Read()) /** Enquanto o comando tiver um valor que não foi lido, continua a execução */
+            while (reader.Read())
             {
                 lista.Add(new Funcionarios
                 {

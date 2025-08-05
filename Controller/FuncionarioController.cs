@@ -12,17 +12,17 @@ namespace MenuLateralHamburgueria.Controller
     {
         public void SalvarFuncionario(Funcionarios funcionario)
         {
-            FuncionarioDAO.Inserir(funcionario);
+            FuncionarioDAO.Cadastrar(funcionario);
         }
 
         public void AtualizarSenhaFuncionario(Funcionarios funcionario)
         {
-            FuncionarioDAO.Atualizar(funcionario);
+            FuncionarioDAO.AtualizarSenha(funcionario);
         }
 
         public List<Funcionarios> AutenticacaoLogin(string NomeUsuario, string Senha)
         {
-            return FuncionarioDAO.Selecionar(NomeUsuario, Senha);
+            return FuncionarioDAO.Autenticacao(NomeUsuario, Senha);
         }
     }
 }
