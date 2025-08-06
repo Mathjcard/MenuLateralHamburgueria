@@ -7,68 +7,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MenuLateralHamburgueria.Controller;
+using MenuLateralHamburgueria.Service;
 
 namespace MenuLateralHamburgueria
 {
     public partial class frmProdutos : Form
     {
+        private readonly ProdutoService produtoService = new ProdutoService();
+
         public frmProdutos()
         {
             InitializeComponent();
         }
 
-        
         /** Adicionar e remover valor - MIAMI */
         private int contaQuantidadeMiami = 0;
-        private int contaQuantidadeNovaYork;
-
         private void ptbAddMiami_Click(object sender, EventArgs e)
         {
-            if (contaQuantidadeMiami < 10)
-            {
-                contaQuantidadeMiami += 1;
-                mtbQuantidadeMiami.Text = Convert.ToString(contaQuantidadeMiami);
-            } else
-            {
-                MessageBox.Show("Quantidade máxima atingida!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            contaQuantidadeMiami = produtoService.adicionaQuantidadeProduto(contaQuantidadeMiami);
+            mtbQuantidadeMiami.Text = Convert.ToString(contaQuantidadeMiami);
         }
         private void ptbExcMiami_Click(object sender, EventArgs e)
         {
-            if (contaQuantidadeMiami <= 0)
-            {
-                MessageBox.Show("Quantidade não informada!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            } else
-            {
-                contaQuantidadeMiami -= 1;
-                mtbQuantidadeMiami.Text = Convert.ToString(contaQuantidadeMiami);
-            }
+            contaQuantidadeMiami = produtoService.removeQuantidadeProduto(contaQuantidadeMiami);
+            mtbQuantidadeMiami.Text = Convert.ToString(contaQuantidadeMiami);
         }
 
         /** Adicionar e remover valor - NOVA YORK */
         private int contaQuantidadeNy = 0;
         private void ptbAddNovaYork_Click(object sender, EventArgs e)
         {
-            if (contaQuantidadeNy < 10)
-            {
-                contaQuantidadeNy += 1;
-                mtbQuantidadeNovaYork.Text = Convert.ToString(contaQuantidadeNy);
-            }else
-            {
-                MessageBox.Show("Quantidade máxima atingida!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            contaQuantidadeNy = produtoService.adicionaQuantidadeProduto(contaQuantidadeNy);
+            mtbQuantidadeNovaYork.Text = Convert.ToString(contaQuantidadeNy);
         }
         private void ptbExcNovaYork_Click(object sender, EventArgs e)
         {
-            if (contaQuantidadeNy <= 0)
-            {
-                MessageBox.Show("Quantidade não informada!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                contaQuantidadeNy -= 1;
-                mtbQuantidadeNovaYork.Text = Convert.ToString(contaQuantidadeNy);
-            }
+            contaQuantidadeNy = produtoService.removeQuantidadeProduto(contaQuantidadeNy);
+            mtbQuantidadeNovaYork.Text = Convert.ToString(contaQuantidadeNy);
         }
 
         /** Adicionar e remover valor - DETROIT */
