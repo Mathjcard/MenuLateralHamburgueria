@@ -171,11 +171,11 @@
     <Compile Include="CadastroUser.Designer.cs">
       <DependentUpon>CadastroUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Config.cs">
+    <Compile Include="Perfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Config.Designer.cs">
-      <DependentUpon>Config.cs</DependentUpon>
+    <Compile Include="Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\FuncionarioController.cs" />
     <Compile Include="DAO\FuncionarioDAO.cs" />
@@ -230,8 +230,8 @@
     <EmbeddedResource Include="CadastroUser.resx">
       <DependentUpon>CadastroUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Config.resx">
-      <DependentUpon>Config.cs</DependentUpon>
+    <EmbeddedResource Include="Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EsquecerSenha.resx">
       <DependentUpon>EsquecerSenha.cs</DependentUpon>
