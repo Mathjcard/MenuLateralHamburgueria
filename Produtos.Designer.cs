@@ -1197,7 +1197,7 @@
             this.btnRegistrarPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnRegistrarPedido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
             this.btnRegistrarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarPedido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarPedido.ForeColor = System.Drawing.Color.DarkGreen;
             this.btnRegistrarPedido.Location = new System.Drawing.Point(673, 492);
             this.btnRegistrarPedido.Margin = new System.Windows.Forms.Padding(0);
@@ -1206,6 +1206,7 @@
             this.btnRegistrarPedido.TabIndex = 100046;
             this.btnRegistrarPedido.Text = "Registrar Pedido";
             this.btnRegistrarPedido.UseVisualStyleBackColor = false;
+            this.btnRegistrarPedido.Click += new System.EventHandler(this.btnRegistrarPedido_Click);
             // 
             // lblMesas
             // 
@@ -1245,7 +1246,7 @@
             this.btnLimparTudo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnLimparTudo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
             this.btnLimparTudo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimparTudo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimparTudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimparTudo.ForeColor = System.Drawing.Color.Red;
             this.btnLimparTudo.Location = new System.Drawing.Point(673, 108);
             this.btnLimparTudo.Margin = new System.Windows.Forms.Padding(0);
@@ -1273,7 +1274,6 @@
             this.Controls.Add(this.panelLogo);
             this.Name = "frmProdutos";
             this.Text = "PRODUTOS";
-            this.Load += new System.EventHandler(this.frmProdutos_Load);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLancheMilao)).EndInit();
