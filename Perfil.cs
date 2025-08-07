@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MenuLateralHamburgueria.DAO;
 
 namespace MenuLateralHamburgueria
 {
@@ -39,11 +40,17 @@ namespace MenuLateralHamburgueria
 
         private void btnSalvarPerfil_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtNomePerfil.Text) || string.IsNullOrWhiteSpace(txtEmailPerfil.Text) || string.IsNullOrWhiteSpace(txtSenhaPerfil.Text) || string.IsNullOrWhiteSpace(txtConfirmaSenhaPerfil.Text))
+            {
+                MessageBox.Show("Por favor, preencha todos os campos.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (!IsValidEmail(txtEmailPerfil.Text))
             {
                 MessageBox.Show("Por favor, informe um e-mail válido.", "E-mail inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-            }                       
+            }
 
             if (txtSenhaPerfil.Text.Length < 6)
             {
@@ -59,7 +66,13 @@ namespace MenuLateralHamburgueria
             }
 
             MessageBox.Show("Perfil atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }          
+
+            
+
+            
+
+        }
+
 
         private bool IsValidEmail(string email)
         {
@@ -74,5 +87,33 @@ namespace MenuLateralHamburgueria
             }
         }
 
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            btnSalvarPerfil.Enabled = true;
+            txtNomePerfil.Focus();
+            txtNomePerfil.Enabled = true;
+            txtEmailPerfil.Enabled = true;
+            txtSenhaPerfil.Enabled = true;
+            txtConfirmaSenhaPerfil.Enabled = true;
+            txtSenhaPerfil.UseSystemPasswordChar = true;
+            txtConfirmaSenhaPerfil.UseSystemPasswordChar = true;
+            SenhaBox.Checked = false;
+            
+        }
+
+        private void frmConfig_Load(object sender, EventArgs e)
+        {
+            txtCodigo.Enabled = false;
+            txtNomePerfil.Enabled = false;
+            txtEmailPerfil.Enabled = false;
+            txtSenhaPerfil.Enabled = false;
+            txtConfirmaSenhaPerfil.Enabled = false;
+            btnSalvarPerfil.Enabled = false;
+            SenhaBox.Checked = false;
+            txtSenhaPerfil.UseSystemPasswordChar = true;
+            txtConfirmaSenhaPerfil.UseSystemPasswordChar = true;
+            txtUserPerfil.Enabled = false;
+
+        }
     }
 }
