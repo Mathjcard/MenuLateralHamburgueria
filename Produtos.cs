@@ -234,21 +234,23 @@ namespace MenuLateralHamburgueria
 
             if (todosProdutos.All(quantidade => quantidade.Text == "0"))
             {
-                MessageBox.Show("Informe pelo menos um produto! \nPedido não registrado.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Informe pelo menos um produto!\n Pedido não registrado.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            var camposDiferentesDeZero = todosProdutos.Where(produto => produto.Text != "0").ToList();
 
-            var produtoInformado = "";
-            var quantidadeInformada = "";
-            foreach (var produtoSelecionado in camposDiferentesDeZero)
+            var camposDiferentesDeZero = todosProdutos.Where(produto => produto.Text != "0").ToList();
+            for (int i = 0; i < camposDiferentesDeZero.Count; i++)
             {
-                produtoInformado = produtoSelecionado.Name;
-                quantidadeInformada = produtoSelecionado.Text;
-                MessageBox.Show($"O Produto {produtoSelecionado.Name} com quantidade {produtoSelecionado.Text} adicionado ao pedido da mesa {cmbMesas.Text}.", "Confirmação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Nome do produto - {camposDiferentesDeZero[i].Name} \n" +
+                                $"Quantidade do Produto - {camposDiferentesDeZero[i].Text}\n" +
+                                $"Mesa - {mesa}");
+
             }
 
-            MessageBox.Show($"Pedido registrado com sucesso! {produtoInformado} - {quantidadeInformada}", "Confirmação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Pedido registrado com sucesso!", "Confirmação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
         }
     }
 }
