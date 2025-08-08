@@ -103,7 +103,6 @@ namespace MenuLateralHamburgueria
 
         private void frmConfig_Load(object sender, EventArgs e)
         {
-            txtCodigo.Enabled = false;
             txtNomePerfil.Enabled = false;
             txtEmailPerfil.Enabled = false;
             txtSenhaPerfil.Enabled = false;

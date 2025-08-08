@@ -49,9 +49,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblNome = new System.Windows.Forms.Label();
             this.txtNomePerfil = new System.Windows.Forms.TextBox();
-            this.pnlCodigo = new System.Windows.Forms.Panel();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.pnlTopo.SuspendLayout();
             this.pnlPerfil.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -59,7 +56,6 @@
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.pnlCodigo.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTopo
@@ -96,7 +92,6 @@
             this.pnlPerfil.Controls.Add(this.panel3);
             this.pnlPerfil.Controls.Add(this.panel2);
             this.pnlPerfil.Controls.Add(this.panel1);
-            this.pnlPerfil.Controls.Add(this.pnlCodigo);
             this.pnlPerfil.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlPerfil.Location = new System.Drawing.Point(0, 67);
@@ -256,9 +251,9 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.lblEmail);
             this.panel2.Controls.Add(this.txtEmailPerfil);
-            this.panel2.Location = new System.Drawing.Point(530, 21);
+            this.panel2.Location = new System.Drawing.Point(442, 21);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(258, 75);
+            this.panel2.Size = new System.Drawing.Size(314, 75);
             this.panel2.TabIndex = 3;
             // 
             // lblEmail
@@ -280,7 +275,7 @@
             this.txtEmailPerfil.Location = new System.Drawing.Point(14, 35);
             this.txtEmailPerfil.Margin = new System.Windows.Forms.Padding(10, 3, 15, 3);
             this.txtEmailPerfil.Name = "txtEmailPerfil";
-            this.txtEmailPerfil.Size = new System.Drawing.Size(233, 29);
+            this.txtEmailPerfil.Size = new System.Drawing.Size(289, 29);
             this.txtEmailPerfil.TabIndex = 0;
             // 
             // panel1
@@ -288,9 +283,9 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.lblNome);
             this.panel1.Controls.Add(this.txtNomePerfil);
-            this.panel1.Location = new System.Drawing.Point(111, 21);
+            this.panel1.Location = new System.Drawing.Point(11, 21);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(414, 75);
+            this.panel1.Size = new System.Drawing.Size(425, 75);
             this.panel1.TabIndex = 2;
             // 
             // lblNome
@@ -312,40 +307,8 @@
             this.txtNomePerfil.Location = new System.Drawing.Point(10, 35);
             this.txtNomePerfil.Margin = new System.Windows.Forms.Padding(10, 3, 15, 3);
             this.txtNomePerfil.Name = "txtNomePerfil";
-            this.txtNomePerfil.Size = new System.Drawing.Size(389, 29);
+            this.txtNomePerfil.Size = new System.Drawing.Size(400, 29);
             this.txtNomePerfil.TabIndex = 0;
-            // 
-            // pnlCodigo
-            // 
-            this.pnlCodigo.BackColor = System.Drawing.Color.Transparent;
-            this.pnlCodigo.Controls.Add(this.lblCodigo);
-            this.pnlCodigo.Controls.Add(this.txtCodigo);
-            this.pnlCodigo.Location = new System.Drawing.Point(12, 21);
-            this.pnlCodigo.Name = "pnlCodigo";
-            this.pnlCodigo.Size = new System.Drawing.Size(96, 75);
-            this.pnlCodigo.TabIndex = 0;
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.ForeColor = System.Drawing.Color.Black;
-            this.lblCodigo.Location = new System.Drawing.Point(10, 8);
-            this.lblCodigo.Margin = new System.Windows.Forms.Padding(10, 0, 15, 0);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(71, 24);
-            this.lblCodigo.TabIndex = 1;
-            this.lblCodigo.Text = "Código";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCodigo.Location = new System.Drawing.Point(10, 35);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(10, 3, 15, 3);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(71, 29);
-            this.txtCodigo.TabIndex = 0;
             // 
             // frmConfig
             // 
@@ -371,8 +334,6 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pnlCodigo.ResumeLayout(false);
-            this.pnlCodigo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -382,9 +343,6 @@
         private System.Windows.Forms.Panel pnlTopo;
         private System.Windows.Forms.Label lblConfiguracao;
         private System.Windows.Forms.Panel pnlPerfil;
-        private System.Windows.Forms.Panel pnlCodigo;
-        private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtEmailPerfil;
