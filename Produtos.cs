@@ -244,13 +244,12 @@ namespace MenuLateralHamburgueria
                 MessageBox.Show($"Nome do produto - {camposDiferentesDeZero[i].Name} \n" +
                                 $"Quantidade do Produto - {camposDiferentesDeZero[i].Text}\n" +
                                 $"Mesa - {mesa}");
+
+
                     
             }
 
             MessageBox.Show($"Pedido registrado com sucesso!", "Confirmação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
-
         }
     }
 }
