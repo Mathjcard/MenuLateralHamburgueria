@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MenuLateralHamburgueria.Views;
+using MenuLateralHamburgueria.Views.TelaProdutos;
 
 namespace MenuLateralHamburgueria
 {
@@ -18,7 +19,7 @@ namespace MenuLateralHamburgueria
         {      
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new frmLogin());  
+                Application.Run(new Index());  
         }
     } 
 }

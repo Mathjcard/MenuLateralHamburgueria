@@ -122,6 +122,7 @@
     <Reference Include="System.Memory.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Memory.Data.6.0.0\lib\net461\System.Memory.Data.dll</HintPath>
     </Reference>
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
@@ -179,8 +180,10 @@
     </Compile>
     <Compile Include="Controller\FuncionarioController.cs" />
     <Compile Include="Controller\PedidoProdutoController.cs" />
+    <Compile Include="Controller\ProdutoController.cs" />
     <Compile Include="DAO\FuncionarioDAO.cs" />
     <Compile Include="DAO\PedidoProdutoDAO.cs" />
+    <Compile Include="DAO\ProdutoDAO.cs" />
     <Compile Include="EsquecerSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +210,7 @@
     </Compile>
     <Compile Include="Models\Funcionarios.cs" />
     <Compile Include="Models\PedidosProdutos.cs" />
+    <Compile Include="Models\Produtos.cs" />
     <Compile Include="panelcentro.cs" />
     <Compile Include="Pedidos.cs">
       <SubType>Form</SubType>
@@ -231,6 +235,12 @@
     <Compile Include="Service\LoginService.cs" />
     <Compile Include="Service\ProdutoService.cs" />
     <Compile Include="Utils\Conexao.cs" />
+    <Compile Include="Views\TelaProdutos\Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaProdutos\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\testeConexao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +284,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\TelaProdutos\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\testeConexao.resx">
       <DependentUpon>testeConexao.cs</DependentUpon>
     </EmbeddedResource>
