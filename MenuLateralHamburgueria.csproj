@@ -178,7 +178,9 @@
       <DependentUpon>Config.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\FuncionarioController.cs" />
+    <Compile Include="Controller\PedidoProdutoController.cs" />
     <Compile Include="DAO\FuncionarioDAO.cs" />
+    <Compile Include="DAO\PedidoProdutoDAO.cs" />
     <Compile Include="EsquecerSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +206,7 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Funcionarios.cs" />
+    <Compile Include="Models\PedidosProdutos.cs" />
     <Compile Include="panelcentro.cs" />
     <Compile Include="Pedidos.cs">
       <SubType>Form</SubType>
