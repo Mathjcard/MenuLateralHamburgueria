@@ -123,7 +123,6 @@
             this.lblMesas = new System.Windows.Forms.Label();
             this.cmbMesas = new System.Windows.Forms.ComboBox();
             this.btnLimparTudo = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLancheMilao)).BeginInit();
             this.pnlLancheMiami.SuspendLayout();
@@ -1258,30 +1257,12 @@
             this.btnLimparTudo.UseVisualStyleBackColor = false;
             this.btnLimparTudo.Click += new System.EventHandler(this.btnLimparTudo_Click);
             // 
-            // btnEditar
-            // 
-            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditar.FlatAppearance.BorderSize = 0;
-            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.Goldenrod;
-            this.btnEditar.Location = new System.Drawing.Point(517, 108);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(154, 39);
-            this.btnEditar.TabIndex = 100050;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = false;
-            // 
             // frmProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(840, 549);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnLimparTudo);
             this.Controls.Add(this.cmbMesas);
             this.Controls.Add(this.lblMesas);
@@ -1470,6 +1451,5 @@
         private System.Windows.Forms.Label lblMesas;
         private System.Windows.Forms.ComboBox cmbMesas;
         private System.Windows.Forms.Button btnLimparTudo;
-        private System.Windows.Forms.Button btnEditar;
     }
 }
