@@ -1249,7 +1249,7 @@
             this.btnLimparTudo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimparTudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimparTudo.ForeColor = System.Drawing.Color.Red;
-            this.btnLimparTudo.Location = new System.Drawing.Point(673, 438);
+            this.btnLimparTudo.Location = new System.Drawing.Point(673, 108);
             this.btnLimparTudo.Margin = new System.Windows.Forms.Padding(0);
             this.btnLimparTudo.Name = "btnLimparTudo";
             this.btnLimparTudo.Size = new System.Drawing.Size(154, 39);
@@ -1267,7 +1267,7 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.Goldenrod;
-            this.btnEditar.Location = new System.Drawing.Point(673, 108);
+            this.btnEditar.Location = new System.Drawing.Point(508, 105);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(0);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(154, 39);
