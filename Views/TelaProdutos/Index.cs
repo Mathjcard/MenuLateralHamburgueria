@@ -79,31 +79,27 @@ namespace MenuLateralHamburgueria.Views.TelaProdutos
 
         }
 
-        //public void validarCamposCadastro()
-        //{
-        //    if (string.IsNullOrWhiteSpace(txtNome.Text))
-        //    {
-        //        MessageBox.Show("Informe o nome do produto", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //        txtNome.Focus();
-        //        return;
-        //    }
-        //    if (string.IsNullOrEmpty(cmbTipo.Text)) 
-        //    {
-        //        MessageBox.Show("Informe o tipo do produto", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //        cmbTipo.Focus();
-        //        return;
-        //    }
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
 
-        //    txtPrecoUni.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+        }
 
-        //    if (string.IsNullOrWhiteSpace(txtPrecoUni.Text))
-        //    {
-        //        MessageBox.Show("Informe o preço do produto", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //        txtPrecoUni.Focus();
-        //        return;
-        //    }
+        private void dgvProdutos_CellDoubleClick(object sender, DataGridViewCellEventArgs linhaSelecionada)
+        {
+            if (linhaSelecionada .RowIndex >= 0)
+            {
+                var produtoSelecionado = dgvProdutos.Rows[linhaSelecionada.RowIndex].DataBoundItem as Produtos;
+                
+                if (produtoSelecionado != null)
+                {
+                    txtNome.Text = produtoSelecionado.Nome;
+                    cmbTipo.Text = produtoSelecionado.Tipo;
+                    txtPrecoUni.Text = produtoSelecionado.PrecoUnitario.ToString();
+                }
+                MessageBox.Show("Linha selecionada: " + produtoSelecionado);
 
-        //    txtPrecoUni.TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
-        //}
+            }
+            btnEditar.Visible = true;
+        }
     }
 }

@@ -43,6 +43,7 @@
             this.panelNome = new System.Windows.Forms.Panel();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             this.panelConteudo.SuspendLayout();
             this.grbListaProdutos.SuspendLayout();
@@ -74,6 +75,7 @@
             // 
             // panelConteudo
             // 
+            this.panelConteudo.Controls.Add(this.btnEditar);
             this.panelConteudo.Controls.Add(this.grbListaProdutos);
             this.panelConteudo.Controls.Add(this.btnCadastrar);
             this.panelConteudo.Controls.Add(this.panelTipo);
@@ -113,11 +115,11 @@
             this.dgvProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProdutos.Size = new System.Drawing.Size(1100, 304);
             this.dgvProdutos.TabIndex = 100048;
+            this.dgvProdutos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellDoubleClick);
             // 
             // btnCadastrar
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCadastrar.FlatAppearance.BorderSize = 0;
             this.btnCadastrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -165,11 +167,11 @@
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTipo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipo.ForeColor = System.Drawing.Color.Orange;
             this.lblTipo.Location = new System.Drawing.Point(18, 10);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(42, 21);
+            this.lblTipo.Size = new System.Drawing.Size(39, 20);
             this.lblTipo.TabIndex = 25;
             this.lblTipo.Text = "Tipo";
             // 
@@ -188,7 +190,7 @@
             this.txtPrecoUni.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPrecoUni.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.txtPrecoUni.Location = new System.Drawing.Point(22, 34);
-            this.txtPrecoUni.Mask = "00,00";
+            this.txtPrecoUni.Mask = "00.00";
             this.txtPrecoUni.Name = "txtPrecoUni";
             this.txtPrecoUni.Size = new System.Drawing.Size(159, 35);
             this.txtPrecoUni.TabIndex = 26;
@@ -197,11 +199,11 @@
             // 
             this.lblPrecoUni.AutoSize = true;
             this.lblPrecoUni.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrecoUni.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecoUni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecoUni.ForeColor = System.Drawing.Color.Orange;
             this.lblPrecoUni.Location = new System.Drawing.Point(18, 10);
             this.lblPrecoUni.Name = "lblPrecoUni";
-            this.lblPrecoUni.Size = new System.Drawing.Size(118, 21);
+            this.lblPrecoUni.Size = new System.Drawing.Size(109, 20);
             this.lblPrecoUni.TabIndex = 25;
             this.lblPrecoUni.Text = "Preço Unitário";
             // 
@@ -229,13 +231,31 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
-            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Orange;
             this.lblNome.Location = new System.Drawing.Point(18, 10);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(57, 21);
+            this.lblNome.Size = new System.Drawing.Size(51, 20);
             this.lblNome.TabIndex = 25;
             this.lblNome.Text = "Nome";
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnEditar.Location = new System.Drawing.Point(289, 94);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(175, 35);
+            this.btnEditar.TabIndex = 100050;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Visible = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // Index
             // 
@@ -279,5 +299,6 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.DataGridView dgvProdutos;
         private System.Windows.Forms.GroupBox grbListaProdutos;
+        private System.Windows.Forms.Button btnEditar;
     }
 }
