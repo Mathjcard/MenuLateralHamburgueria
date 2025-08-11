@@ -33,19 +33,17 @@ namespace MenuLateralHamburgueria
             {
                 try
                 {
-                   var funcionarioAutenticado =  funcionarioController.AutenticacaoLogin(txtLogin.Text, txtSenha.Text);
+                    var funcionarioAutenticado = funcionarioController.AutenticacaoLogin(txtLogin.Text, txtSenha.Text);
 
-                   if (funcionarioAutenticado.Count != 1)
-                   {
-                       MessageBox.Show($"Usuário não encontrado ou senha incorreta!", "Erro ao logar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (funcionarioAutenticado.Count != 1)
+                    {
+                        MessageBox.Show("Usuário não encontrado ou senha incorreta!", "Erro ao logar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
 
-                       return;
-                   }
-                   //MessageBox.Show("Login Feito com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                   frmPrincipal telaMenu = new frmPrincipal();
-                   telaMenu.Show();
-                   this.Hide();
+                    // Login ok - fecha o login e sinaliza que deu certo
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
                 }
                 catch (Exception ex)
                 {
@@ -53,6 +51,7 @@ namespace MenuLateralHamburgueria
                 }
             }
         }
+    
 
         private void lblEsquciSenha_Click(object sender, EventArgs e)
         {

@@ -110,6 +110,11 @@ namespace MenuLateralHamburgueria
                 txtConfirmaSenha.UseSystemPasswordChar = true;
             }
         }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
