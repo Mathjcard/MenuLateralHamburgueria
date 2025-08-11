@@ -80,6 +80,11 @@ namespace MenuLateralHamburgueria
             panelCentro.Controls.Add(frmCarrossel);
             frmCarrossel.Show();
         }
+
+        private void panelCentro_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     }
 

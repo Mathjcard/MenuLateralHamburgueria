@@ -28,164 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProdutos));
+            this.components = new System.ComponentModel.Container();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.imgLancheMilao = new System.Windows.Forms.PictureBox();
-            this.lblLanches = new System.Windows.Forms.Label();
-            this.lblBebidas = new System.Windows.Forms.Label();
-            this.pnlLancheMiami = new System.Windows.Forms.Panel();
-            this.pnlControlesLancheMiami = new System.Windows.Forms.Panel();
-            this.mtbQuantidadeMiami = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcMiami = new System.Windows.Forms.PictureBox();
-            this.ptbAddMiami = new System.Windows.Forms.PictureBox();
-            this.lblLancheMiami = new System.Windows.Forms.Label();
-            this.imgLancheMiami = new System.Windows.Forms.PictureBox();
-            this.pnlLancheNovaYork = new System.Windows.Forms.Panel();
-            this.imgLancheNovaYork = new System.Windows.Forms.PictureBox();
-            this.pnlControlesLancheNY = new System.Windows.Forms.Panel();
-            this.mtbQuantidadeNovaYork = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcNovaYork = new System.Windows.Forms.PictureBox();
-            this.ptbAddNovaYork = new System.Windows.Forms.PictureBox();
-            this.lblLancheNovaYork = new System.Windows.Forms.Label();
-            this.pnlLancheDetroit = new System.Windows.Forms.Panel();
-            this.imgLancheDetroit = new System.Windows.Forms.PictureBox();
-            this.pnlControlesLancheDetroit = new System.Windows.Forms.Panel();
-            this.mtbQuantidadeDetroit = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcDetroit = new System.Windows.Forms.PictureBox();
-            this.ptbAddDetroit = new System.Windows.Forms.PictureBox();
-            this.lblLancheDetroit = new System.Windows.Forms.Label();
-            this.pnlLancheAmazonas = new System.Windows.Forms.Panel();
-            this.imgLancheAmazonas = new System.Windows.Forms.PictureBox();
-            this.pnlControlesLancheAmazonas = new System.Windows.Forms.Panel();
-            this.mtbQuantidadeAmazonas = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcAmazonas = new System.Windows.Forms.PictureBox();
-            this.ptbAddAmazonas = new System.Windows.Forms.PictureBox();
-            this.lblLancheAmazonas = new System.Windows.Forms.Label();
-            this.pnlLanches = new System.Windows.Forms.Panel();
-            this.pnlLancheMilao = new System.Windows.Forms.Panel();
-            this.pnlControlesLancheMilao = new System.Windows.Forms.Panel();
-            this.mtbQuantidadeMilao = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcMilao = new System.Windows.Forms.PictureBox();
-            this.ptbAddMilao = new System.Windows.Forms.PictureBox();
-            this.lblLancheMilao = new System.Windows.Forms.Label();
-            this.pnlLanchePaulista = new System.Windows.Forms.Panel();
-            this.imgLanchePaulista = new System.Windows.Forms.PictureBox();
-            this.pnlControlesLanchePaulista = new System.Windows.Forms.Panel();
-            this.mtbQuantidadePaulista = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcPaulista = new System.Windows.Forms.PictureBox();
-            this.ptbAddPaulista = new System.Windows.Forms.PictureBox();
-            this.lblLanchePaulista = new System.Windows.Forms.Label();
-            this.pnlBebidas = new System.Windows.Forms.Panel();
-            this.pnlBebidaSuco = new System.Windows.Forms.Panel();
-            this.imgBebidaSuco = new System.Windows.Forms.PictureBox();
-            this.pnlControlesSuco = new System.Windows.Forms.Panel();
-            this.mtbQuantidadeSuco = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcSuco = new System.Windows.Forms.PictureBox();
-            this.ptbAddSuco = new System.Windows.Forms.PictureBox();
-            this.lblBebidaSuco = new System.Windows.Forms.Label();
-            this.pnlBebidaGuarana = new System.Windows.Forms.Panel();
-            this.imgBebidaGuarana = new System.Windows.Forms.PictureBox();
-            this.pnlControlesGuarana = new System.Windows.Forms.Panel();
-            this.mtbQuantidadeGuarana = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcGuarana = new System.Windows.Forms.PictureBox();
-            this.ptbAddGuarana = new System.Windows.Forms.PictureBox();
-            this.lblBebidaGuarana = new System.Windows.Forms.Label();
-            this.pnlBebidaPepsi = new System.Windows.Forms.Panel();
-            this.imgBebidaPepsi = new System.Windows.Forms.PictureBox();
-            this.pnlControlesPepsi = new System.Windows.Forms.Panel();
-            this.mtbQuantidadePepsi = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcPepsi = new System.Windows.Forms.PictureBox();
-            this.ptbAddPepsi = new System.Windows.Forms.PictureBox();
-            this.lblBebidaPepsi = new System.Windows.Forms.Label();
-            this.pnlBebidaCoca = new System.Windows.Forms.Panel();
-            this.imgBebidaCoca = new System.Windows.Forms.PictureBox();
-            this.pnlControlesCoca = new System.Windows.Forms.Panel();
-            this.mtbQuantidadeCoca = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcCoca = new System.Windows.Forms.PictureBox();
-            this.ptbAddCoca = new System.Windows.Forms.PictureBox();
-            this.lblBebidaCoca = new System.Windows.Forms.Label();
-            this.pnlBebidaFanta = new System.Windows.Forms.Panel();
-            this.imgBebidaFanta = new System.Windows.Forms.PictureBox();
-            this.pnlControlesFanta = new System.Windows.Forms.Panel();
-            this.mtbQuantidadeFanta = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcFanta = new System.Windows.Forms.PictureBox();
-            this.ptbAddFanta = new System.Windows.Forms.PictureBox();
-            this.lblBebidaFanta = new System.Windows.Forms.Label();
-            this.pnlBebidaSprite = new System.Windows.Forms.Panel();
-            this.imgBebidaSprite = new System.Windows.Forms.PictureBox();
-            this.pnlControlesSprite = new System.Windows.Forms.Panel();
-            this.mtbQuantidadeSprite = new System.Windows.Forms.MaskedTextBox();
-            this.ptbExcSprite = new System.Windows.Forms.PictureBox();
-            this.ptbAddSprite = new System.Windows.Forms.PictureBox();
-            this.lblBebidaSprite = new System.Windows.Forms.Label();
             this.btnRegistrarPedido = new System.Windows.Forms.Button();
             this.lblMesas = new System.Windows.Forms.Label();
             this.cmbMesas = new System.Windows.Forms.ComboBox();
             this.btnLimparTudo = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precounitarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datacadastroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lanchoneteDataSet = new MenuLateralHamburgueria.lanchoneteDataSet();
+            this.produtosTableAdapter = new MenuLateralHamburgueria.lanchoneteDataSetTableAdapters.produtosTableAdapter();
+            this.btnNew_Item = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLancheMilao)).BeginInit();
-            this.pnlLancheMiami.SuspendLayout();
-            this.pnlControlesLancheMiami.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcMiami)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddMiami)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLancheMiami)).BeginInit();
-            this.pnlLancheNovaYork.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLancheNovaYork)).BeginInit();
-            this.pnlControlesLancheNY.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcNovaYork)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddNovaYork)).BeginInit();
-            this.pnlLancheDetroit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLancheDetroit)).BeginInit();
-            this.pnlControlesLancheDetroit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcDetroit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddDetroit)).BeginInit();
-            this.pnlLancheAmazonas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLancheAmazonas)).BeginInit();
-            this.pnlControlesLancheAmazonas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcAmazonas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddAmazonas)).BeginInit();
-            this.pnlLanches.SuspendLayout();
-            this.pnlLancheMilao.SuspendLayout();
-            this.pnlControlesLancheMilao.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcMilao)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddMilao)).BeginInit();
-            this.pnlLanchePaulista.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLanchePaulista)).BeginInit();
-            this.pnlControlesLanchePaulista.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcPaulista)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddPaulista)).BeginInit();
-            this.pnlBebidas.SuspendLayout();
-            this.pnlBebidaSuco.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaSuco)).BeginInit();
-            this.pnlControlesSuco.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcSuco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddSuco)).BeginInit();
-            this.pnlBebidaGuarana.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaGuarana)).BeginInit();
-            this.pnlControlesGuarana.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcGuarana)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddGuarana)).BeginInit();
-            this.pnlBebidaPepsi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaPepsi)).BeginInit();
-            this.pnlControlesPepsi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcPepsi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddPepsi)).BeginInit();
-            this.pnlBebidaCoca.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaCoca)).BeginInit();
-            this.pnlControlesCoca.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcCoca)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddCoca)).BeginInit();
-            this.pnlBebidaFanta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaFanta)).BeginInit();
-            this.pnlControlesFanta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcFanta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddFanta)).BeginInit();
-            this.pnlBebidaSprite.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaSprite)).BeginInit();
-            this.pnlControlesSprite.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcSprite)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddSprite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lanchoneteDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLogo
@@ -195,7 +59,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(840, 67);
+            this.panelLogo.Size = new System.Drawing.Size(977, 67);
             this.panelLogo.TabIndex = 1;
             // 
             // label2
@@ -1255,100 +1119,106 @@
             this.btnLimparTudo.UseVisualStyleBackColor = false;
             this.btnLimparTudo.Click += new System.EventHandler(this.btnLimparTudo_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn,
+            this.precounitarioDataGridViewTextBoxColumn,
+            this.tipoDataGridViewTextBoxColumn,
+            this.quantidadeDataGridViewTextBoxColumn,
+            this.datacadastroDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.produtosBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(17, 161);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(644, 298);
+            this.dataGridView1.TabIndex = 100050;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            // 
+            // precounitarioDataGridViewTextBoxColumn
+            // 
+            this.precounitarioDataGridViewTextBoxColumn.DataPropertyName = "preco_unitario";
+            this.precounitarioDataGridViewTextBoxColumn.HeaderText = "preco_unitario";
+            this.precounitarioDataGridViewTextBoxColumn.Name = "precounitarioDataGridViewTextBoxColumn";
+            // 
+            // tipoDataGridViewTextBoxColumn
+            // 
+            this.tipoDataGridViewTextBoxColumn.DataPropertyName = "tipo";
+            this.tipoDataGridViewTextBoxColumn.HeaderText = "tipo";
+            this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
+            // 
+            // quantidadeDataGridViewTextBoxColumn
+            // 
+            this.quantidadeDataGridViewTextBoxColumn.DataPropertyName = "quantidade";
+            this.quantidadeDataGridViewTextBoxColumn.HeaderText = "quantidade";
+            this.quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
+            // 
+            // datacadastroDataGridViewTextBoxColumn
+            // 
+            this.datacadastroDataGridViewTextBoxColumn.DataPropertyName = "data_cadastro";
+            this.datacadastroDataGridViewTextBoxColumn.HeaderText = "data_cadastro";
+            this.datacadastroDataGridViewTextBoxColumn.Name = "datacadastroDataGridViewTextBoxColumn";
+            // 
+            // produtosBindingSource
+            // 
+            this.produtosBindingSource.DataMember = "produtos";
+            this.produtosBindingSource.DataSource = this.lanchoneteDataSet;
+            // 
+            // lanchoneteDataSet
+            // 
+            this.lanchoneteDataSet.DataSetName = "lanchoneteDataSet";
+            this.lanchoneteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // produtosTableAdapter
+            // 
+            this.produtosTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnNew_Item
+            // 
+            this.btnNew_Item.Location = new System.Drawing.Point(707, 176);
+            this.btnNew_Item.Name = "btnNew_Item";
+            this.btnNew_Item.Size = new System.Drawing.Size(136, 41);
+            this.btnNew_Item.TabIndex = 100051;
+            this.btnNew_Item.Text = "ENVIAR PARA PEDIDO";
+            this.btnNew_Item.UseVisualStyleBackColor = true;
+            this.btnNew_Item.Click += new System.EventHandler(this.btnNew_Item_Click);
+            // 
             // frmProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(840, 549);
+            this.ClientSize = new System.Drawing.Size(977, 549);
+            this.Controls.Add(this.btnNew_Item);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnLimparTudo);
             this.Controls.Add(this.cmbMesas);
             this.Controls.Add(this.lblMesas);
             this.Controls.Add(this.btnRegistrarPedido);
-            this.Controls.Add(this.pnlBebidas);
-            this.Controls.Add(this.pnlLanches);
-            this.Controls.Add(this.lblBebidas);
-            this.Controls.Add(this.lblLanches);
             this.Controls.Add(this.panelLogo);
             this.Name = "frmProdutos";
             this.Text = "PRODUTOS";
             this.Load += new System.EventHandler(this.frmProdutos_Load);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLancheMilao)).EndInit();
-            this.pnlLancheMiami.ResumeLayout(false);
-            this.pnlControlesLancheMiami.ResumeLayout(false);
-            this.pnlControlesLancheMiami.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcMiami)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddMiami)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLancheMiami)).EndInit();
-            this.pnlLancheNovaYork.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgLancheNovaYork)).EndInit();
-            this.pnlControlesLancheNY.ResumeLayout(false);
-            this.pnlControlesLancheNY.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcNovaYork)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddNovaYork)).EndInit();
-            this.pnlLancheDetroit.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgLancheDetroit)).EndInit();
-            this.pnlControlesLancheDetroit.ResumeLayout(false);
-            this.pnlControlesLancheDetroit.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcDetroit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddDetroit)).EndInit();
-            this.pnlLancheAmazonas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgLancheAmazonas)).EndInit();
-            this.pnlControlesLancheAmazonas.ResumeLayout(false);
-            this.pnlControlesLancheAmazonas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcAmazonas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddAmazonas)).EndInit();
-            this.pnlLanches.ResumeLayout(false);
-            this.pnlLancheMilao.ResumeLayout(false);
-            this.pnlControlesLancheMilao.ResumeLayout(false);
-            this.pnlControlesLancheMilao.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcMilao)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddMilao)).EndInit();
-            this.pnlLanchePaulista.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgLanchePaulista)).EndInit();
-            this.pnlControlesLanchePaulista.ResumeLayout(false);
-            this.pnlControlesLanchePaulista.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcPaulista)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddPaulista)).EndInit();
-            this.pnlBebidas.ResumeLayout(false);
-            this.pnlBebidaSuco.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaSuco)).EndInit();
-            this.pnlControlesSuco.ResumeLayout(false);
-            this.pnlControlesSuco.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcSuco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddSuco)).EndInit();
-            this.pnlBebidaGuarana.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaGuarana)).EndInit();
-            this.pnlControlesGuarana.ResumeLayout(false);
-            this.pnlControlesGuarana.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcGuarana)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddGuarana)).EndInit();
-            this.pnlBebidaPepsi.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaPepsi)).EndInit();
-            this.pnlControlesPepsi.ResumeLayout(false);
-            this.pnlControlesPepsi.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcPepsi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddPepsi)).EndInit();
-            this.pnlBebidaCoca.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaCoca)).EndInit();
-            this.pnlControlesCoca.ResumeLayout(false);
-            this.pnlControlesCoca.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcCoca)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddCoca)).EndInit();
-            this.pnlBebidaFanta.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaFanta)).EndInit();
-            this.pnlControlesFanta.ResumeLayout(false);
-            this.pnlControlesFanta.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcFanta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddFanta)).EndInit();
-            this.pnlBebidaSprite.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgBebidaSprite)).EndInit();
-            this.pnlControlesSprite.ResumeLayout(false);
-            this.pnlControlesSprite.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExcSprite)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAddSprite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lanchoneteDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1358,97 +1228,20 @@
 
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox imgLancheMilao;
-        private System.Windows.Forms.Label lblLanches;
-        private System.Windows.Forms.Label lblBebidas;
-        private System.Windows.Forms.Panel pnlLancheMiami;
-        private System.Windows.Forms.Panel pnlControlesLancheMiami;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadeMiami;
-        private System.Windows.Forms.PictureBox ptbExcMiami;
-        private System.Windows.Forms.PictureBox ptbAddMiami;
-        private System.Windows.Forms.Label lblLancheMiami;
-        private System.Windows.Forms.PictureBox imgLancheMiami;
-        private System.Windows.Forms.Panel pnlLancheNovaYork;
-        private System.Windows.Forms.PictureBox imgLancheNovaYork;
-        private System.Windows.Forms.Panel pnlControlesLancheNY;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadeNovaYork;
-        private System.Windows.Forms.PictureBox ptbExcNovaYork;
-        private System.Windows.Forms.PictureBox ptbAddNovaYork;
-        private System.Windows.Forms.Label lblLancheNovaYork;
-        private System.Windows.Forms.Panel pnlLancheDetroit;
-        private System.Windows.Forms.PictureBox imgLancheDetroit;
-        private System.Windows.Forms.Panel pnlControlesLancheDetroit;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadeDetroit;
-        private System.Windows.Forms.PictureBox ptbExcDetroit;
-        private System.Windows.Forms.PictureBox ptbAddDetroit;
-        private System.Windows.Forms.Label lblLancheDetroit;
-        private System.Windows.Forms.Panel pnlLancheAmazonas;
-        private System.Windows.Forms.Panel pnlControlesLancheAmazonas;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadeAmazonas;
-        private System.Windows.Forms.PictureBox ptbExcAmazonas;
-        private System.Windows.Forms.PictureBox ptbAddAmazonas;
-        private System.Windows.Forms.Label lblLancheAmazonas;
-        private System.Windows.Forms.Panel pnlLanches;
-        private System.Windows.Forms.PictureBox imgLancheAmazonas;
-        private System.Windows.Forms.Panel pnlLanchePaulista;
-        private System.Windows.Forms.PictureBox imgLanchePaulista;
-        private System.Windows.Forms.Panel pnlControlesLanchePaulista;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadePaulista;
-        private System.Windows.Forms.PictureBox ptbExcPaulista;
-        private System.Windows.Forms.PictureBox ptbAddPaulista;
-        private System.Windows.Forms.Label lblLanchePaulista;
-        private System.Windows.Forms.Panel pnlLancheMilao;
-        private System.Windows.Forms.Panel pnlControlesLancheMilao;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadeMilao;
-        private System.Windows.Forms.PictureBox ptbExcMilao;
-        private System.Windows.Forms.PictureBox ptbAddMilao;
-        private System.Windows.Forms.Label lblLancheMilao;
-        private System.Windows.Forms.Panel pnlBebidas;
-        private System.Windows.Forms.Panel pnlBebidaSuco;
-        private System.Windows.Forms.Panel pnlControlesSuco;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadeSuco;
-        private System.Windows.Forms.PictureBox ptbExcSuco;
-        private System.Windows.Forms.PictureBox ptbAddSuco;
-        private System.Windows.Forms.Label lblBebidaSuco;
-        private System.Windows.Forms.Panel pnlBebidaGuarana;
-        private System.Windows.Forms.Panel pnlControlesGuarana;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadeGuarana;
-        private System.Windows.Forms.PictureBox ptbExcGuarana;
-        private System.Windows.Forms.PictureBox ptbAddGuarana;
-        private System.Windows.Forms.Label lblBebidaGuarana;
-        private System.Windows.Forms.Panel pnlBebidaPepsi;
-        private System.Windows.Forms.Panel pnlControlesPepsi;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadePepsi;
-        private System.Windows.Forms.PictureBox ptbExcPepsi;
-        private System.Windows.Forms.PictureBox ptbAddPepsi;
-        private System.Windows.Forms.Label lblBebidaPepsi;
-        private System.Windows.Forms.Panel pnlBebidaCoca;
-        private System.Windows.Forms.Panel pnlControlesCoca;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadeCoca;
-        private System.Windows.Forms.PictureBox ptbExcCoca;
-        private System.Windows.Forms.PictureBox ptbAddCoca;
-        private System.Windows.Forms.Label lblBebidaCoca;
-        private System.Windows.Forms.Panel pnlBebidaFanta;
-        private System.Windows.Forms.Panel pnlControlesFanta;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadeFanta;
-        private System.Windows.Forms.PictureBox ptbExcFanta;
-        private System.Windows.Forms.PictureBox ptbAddFanta;
-        private System.Windows.Forms.Label lblBebidaFanta;
-        private System.Windows.Forms.Panel pnlBebidaSprite;
-        private System.Windows.Forms.Panel pnlControlesSprite;
-        private System.Windows.Forms.MaskedTextBox mtbQuantidadeSprite;
-        private System.Windows.Forms.PictureBox ptbExcSprite;
-        private System.Windows.Forms.PictureBox ptbAddSprite;
-        private System.Windows.Forms.Label lblBebidaSprite;
-        private System.Windows.Forms.PictureBox imgBebidaSprite;
-        private System.Windows.Forms.PictureBox imgBebidaFanta;
-        private System.Windows.Forms.PictureBox imgBebidaSuco;
-        private System.Windows.Forms.PictureBox imgBebidaCoca;
-        private System.Windows.Forms.PictureBox imgBebidaPepsi;
-        private System.Windows.Forms.PictureBox imgBebidaGuarana;
         private System.Windows.Forms.Button btnRegistrarPedido;
         private System.Windows.Forms.Label lblMesas;
         private System.Windows.Forms.ComboBox cmbMesas;
         private System.Windows.Forms.Button btnLimparTudo;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private lanchoneteDataSet lanchoneteDataSet;
+        private System.Windows.Forms.BindingSource produtosBindingSource;
+        private lanchoneteDataSetTableAdapters.produtosTableAdapter produtosTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precounitarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datacadastroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnNew_Item;
     }
 }

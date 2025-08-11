@@ -16,5 +16,17 @@ namespace MenuLateralHamburgueria
         {
             InitializeComponent();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void frmPedidos_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'lanchoneteDataSet.pedidos'. Você pode movê-la ou removê-la conforme necessário.
+            this.pedidosTableAdapter.Fill(this.lanchoneteDataSet.pedidos);
+
+        }
     }
 }
