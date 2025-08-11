@@ -31,6 +31,7 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panelConteudo = new System.Windows.Forms.Panel();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.grbListaProdutos = new System.Windows.Forms.GroupBox();
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
             this.btnCadastrar = new System.Windows.Forms.Button();
@@ -43,7 +44,8 @@
             this.panelNome = new System.Windows.Forms.Panel();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             this.panelConteudo.SuspendLayout();
             this.grbListaProdutos.SuspendLayout();
@@ -75,6 +77,8 @@
             // 
             // panelConteudo
             // 
+            this.panelConteudo.Controls.Add(this.btnCancelar);
+            this.panelConteudo.Controls.Add(this.btnSalvar);
             this.panelConteudo.Controls.Add(this.btnEditar);
             this.panelConteudo.Controls.Add(this.grbListaProdutos);
             this.panelConteudo.Controls.Add(this.btnCadastrar);
@@ -86,6 +90,24 @@
             this.panelConteudo.Name = "panelConteudo";
             this.panelConteudo.Size = new System.Drawing.Size(1154, 489);
             this.panelConteudo.TabIndex = 3;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnEditar.Location = new System.Drawing.Point(388, 94);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(175, 35);
+            this.btnEditar.TabIndex = 100050;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Visible = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // grbListaProdutos
             // 
@@ -121,11 +143,11 @@
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
+            this.btnCadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnCadastrar.Location = new System.Drawing.Point(490, 94);
+            this.btnCadastrar.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnCadastrar.Location = new System.Drawing.Point(568, 94);
             this.btnCadastrar.Margin = new System.Windows.Forms.Padding(0);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(175, 35);
@@ -150,6 +172,7 @@
             this.cmbTipo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
             this.cmbTipo.BackColor = System.Drawing.SystemColors.Control;
             this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipo.Enabled = false;
             this.cmbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTipo.FormattingEnabled = true;
             this.cmbTipo.Items.AddRange(new object[] {
@@ -188,6 +211,7 @@
             // txtPrecoUni
             // 
             this.txtPrecoUni.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPrecoUni.Enabled = false;
             this.txtPrecoUni.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.txtPrecoUni.Location = new System.Drawing.Point(22, 34);
             this.txtPrecoUni.Mask = "00.00";
@@ -220,6 +244,7 @@
             // txtNome
             // 
             this.txtNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNome.Enabled = false;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(22, 34);
             this.txtNome.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
@@ -239,23 +264,40 @@
             this.lblNome.TabIndex = 25;
             this.lblNome.Text = "Nome";
             // 
-            // btnEditar
+            // btnSalvar
             // 
-            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnEditar.Location = new System.Drawing.Point(289, 94);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(175, 35);
-            this.btnEditar.TabIndex = 100050;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = false;
-            this.btnEditar.Visible = false;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.btnSalvar.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.Green;
+            this.btnSalvar.Location = new System.Drawing.Point(748, 94);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(175, 35);
+            this.btnSalvar.TabIndex = 100051;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Visible = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.Red;
+            this.btnCancelar.Location = new System.Drawing.Point(208, 94);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(175, 35);
+            this.btnCancelar.TabIndex = 100052;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Visible = false;
             // 
             // Index
             // 
@@ -300,5 +342,7 @@
         private System.Windows.Forms.DataGridView dgvProdutos;
         private System.Windows.Forms.GroupBox grbListaProdutos;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

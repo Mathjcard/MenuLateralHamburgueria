@@ -33,7 +33,41 @@ namespace MenuLateralHamburgueria.Views.TelaProdutos
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            //validarCamposCadastro();
+            txtNome.Enabled = true;
+            cmbTipo.Enabled = true;
+            txtPrecoUni.Enabled = true;
+
+            txtNome.Focus();
+
+            btnCadastrar.Visible = false;
+            btnSalvar.Visible = true;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvProdutos_CellDoubleClick(object sender, DataGridViewCellEventArgs linhaSelecionada)
+        {
+            if (linhaSelecionada .RowIndex >= 0)
+            {
+                var produtoSelecionado = dgvProdutos.Rows[linhaSelecionada.RowIndex].DataBoundItem as Produtos;
+                
+                if (produtoSelecionado != null)
+                {
+                    txtNome.Text = produtoSelecionado.Nome;
+                    cmbTipo.Text = produtoSelecionado.Tipo;
+                    txtPrecoUni.Text = produtoSelecionado.PrecoUnitario.ToString();
+                }
+                MessageBox.Show("Linha selecionada: " + produtoSelecionado);
+
+            }
+            btnEditar.Visible = true;
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
             if (string.IsNullOrWhiteSpace(txtNome.Text))
             {
                 MessageBox.Show("Informe o nome do produto", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -71,35 +105,13 @@ namespace MenuLateralHamburgueria.Views.TelaProdutos
                 MessageBox.Show("Produto salvo com sucesso!", "Contato Cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 AtualizarTabelaProdutos();
+
+                btnEditar.Visible = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Erro ao salvar produto: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-        }
-
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvProdutos_CellDoubleClick(object sender, DataGridViewCellEventArgs linhaSelecionada)
-        {
-            if (linhaSelecionada .RowIndex >= 0)
-            {
-                var produtoSelecionado = dgvProdutos.Rows[linhaSelecionada.RowIndex].DataBoundItem as Produtos;
-                
-                if (produtoSelecionado != null)
-                {
-                    txtNome.Text = produtoSelecionado.Nome;
-                    cmbTipo.Text = produtoSelecionado.Tipo;
-                    txtPrecoUni.Text = produtoSelecionado.PrecoUnitario.ToString();
-                }
-                MessageBox.Show("Linha selecionada: " + produtoSelecionado);
-
-            }
-            btnEditar.Visible = true;
         }
     }
 }
