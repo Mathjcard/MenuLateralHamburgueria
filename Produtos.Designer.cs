@@ -254,7 +254,6 @@
             this.pnlControlesLancheMiami.Controls.Add(this.mtbQuantidadeMiami);
             this.pnlControlesLancheMiami.Controls.Add(this.ptbExcMiami);
             this.pnlControlesLancheMiami.Controls.Add(this.ptbAddMiami);
-            this.pnlControlesLancheMiami.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlControlesLancheMiami.Location = new System.Drawing.Point(0, 113);
             this.pnlControlesLancheMiami.Name = "pnlControlesLancheMiami";
             this.pnlControlesLancheMiami.Size = new System.Drawing.Size(98, 34);
