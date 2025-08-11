@@ -202,6 +202,7 @@
             this.panelCentro.Name = "panelCentro";
             this.panelCentro.Size = new System.Drawing.Size(970, 666);
             this.panelCentro.TabIndex = 1;
+            this.panelCentro.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCentro_Paint);
             // 
             // frmPrincipal
             // 

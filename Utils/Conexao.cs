@@ -9,7 +9,7 @@ namespace MenuLateralHamburgueria.Utils
 {
     public static class Conexao
     {
-        private static string dadosConexao = @"Data Source=MAR0625654W10-1;Initial Catalog=lanchonete;
+        private static string dadosConexao = @"Data Source=MAR0625665W10-1;Initial Catalog=lanchonete;
             User ID=sa;Password=senac2025;
             TrustServerCertificate=True;Integrated Security=false";
 

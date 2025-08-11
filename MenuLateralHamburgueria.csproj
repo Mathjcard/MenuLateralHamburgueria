@@ -178,6 +178,8 @@
       <DependentUpon>Config.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\FuncionarioController.cs" />
+    <Compile Include="Controller\ProdutosController.cs" />
+    <Compile Include="DAO\ProdutosDAO.cs" />
     <Compile Include="DAO\FuncionarioDAO.cs" />
     <Compile Include="EsquecerSenha.cs">
       <SubType>Form</SubType>
@@ -191,6 +193,11 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="lanchoneteDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lanchoneteDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Listagem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +210,7 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Produtos.cs" />
     <Compile Include="Models\Funcionarios.cs" />
     <Compile Include="panelcentro.cs" />
     <Compile Include="Pedidos.cs">
@@ -273,6 +281,17 @@
     <EmbeddedResource Include="Views\testeConexao.resx">
       <DependentUpon>testeConexao.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="lanchoneteDataSet.xsc">
+      <DependentUpon>lanchoneteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="lanchoneteDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lanchoneteDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lanchoneteDataSet.xss">
+      <DependentUpon>lanchoneteDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

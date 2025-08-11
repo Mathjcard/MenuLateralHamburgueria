@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MenuLateralHamburgueria.Utils;
+using MenuLateralHamburgueria.Models;
+using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace MenuLateralHamburgueria
 {
@@ -20,14 +25,14 @@ namespace MenuLateralHamburgueria
         
         /** Adicionar e remover valor - MIAMI */
         private int contaQuantidadeMiami = 0;
-        private int contaQuantidadeNovaYork;
+        //private int contaQuantidadeNovaYork;
 
         private void ptbAddMiami_Click(object sender, EventArgs e)
         {
             if (contaQuantidadeMiami < 10)
             {
                 contaQuantidadeMiami += 1;
-                mtbQuantidadeMiami.Text = Convert.ToString(contaQuantidadeMiami);
+                //mtbQuantidadeMiami.Text = Convert.ToString(contaQuantidadeMiami);
             } else
             {
                 MessageBox.Show("Quantidade máxima atingida!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -41,7 +46,7 @@ namespace MenuLateralHamburgueria
             } else
             {
                 contaQuantidadeMiami -= 1;
-                mtbQuantidadeMiami.Text = Convert.ToString(contaQuantidadeMiami);
+               // mtbQuantidadeMiami.Text = Convert.ToString(contaQuantidadeMiami);
             }
         }
 
@@ -52,7 +57,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadeNy < 10)
             {
                 contaQuantidadeNy += 1;
-                mtbQuantidadeNovaYork.Text = Convert.ToString(contaQuantidadeNy);
+                //mtbQuantidadeNovaYork.Text = Convert.ToString(contaQuantidadeNy);
             }else
             {
                 MessageBox.Show("Quantidade máxima atingida!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -67,7 +72,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadeNy -= 1;
-                mtbQuantidadeNovaYork.Text = Convert.ToString(contaQuantidadeNy);
+                //mtbQuantidadeNovaYork.Text = Convert.ToString(contaQuantidadeNy);
             }
         }
 
@@ -78,7 +83,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadeDetroit < 10)
             {
                 contaQuantidadeDetroit += 1;
-                mtbQuantidadeDetroit.Text = Convert.ToString(contaQuantidadeDetroit);
+                //mtbQuantidadeDetroit.Text = Convert.ToString(contaQuantidadeDetroit);
             }
             else
             {
@@ -94,7 +99,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadeDetroit -= 1;
-                mtbQuantidadeDetroit.Text = Convert.ToString(contaQuantidadeDetroit);
+                //mtbQuantidadeDetroit.Text = Convert.ToString(contaQuantidadeDetroit);
             }
         }
 
@@ -105,7 +110,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadeAmazonas < 10)
             {
                 contaQuantidadeAmazonas += 1;
-                mtbQuantidadeAmazonas.Text = Convert.ToString(contaQuantidadeAmazonas);
+                //mtbQuantidadeAmazonas.Text = Convert.ToString(contaQuantidadeAmazonas);
             }
             else
             {
@@ -121,7 +126,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadeAmazonas -= 1;
-                mtbQuantidadeAmazonas.Text = Convert.ToString(contaQuantidadeAmazonas);
+                //mtbQuantidadeAmazonas.Text = Convert.ToString(contaQuantidadeAmazonas);
             }
         }
 
@@ -132,7 +137,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadePaulista < 10)
             {
                 contaQuantidadePaulista += 1;
-                mtbQuantidadePaulista.Text = Convert.ToString(contaQuantidadePaulista);
+                //mtbQuantidadePaulista.Text = Convert.ToString(contaQuantidadePaulista);
             }
             else
             {
@@ -148,7 +153,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadePaulista -= 1;
-                mtbQuantidadePaulista.Text = Convert.ToString(contaQuantidadePaulista);
+                //mtbQuantidadePaulista.Text = Convert.ToString(contaQuantidadePaulista);
             }
         }
 
@@ -159,7 +164,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadeMilao < 10)
             {
                 contaQuantidadeMilao += 1;
-                mtbQuantidadeMilao.Text = Convert.ToString(contaQuantidadeMilao);
+                //mtbQuantidadeMilao.Text = Convert.ToString(contaQuantidadeMilao);
             }
             else
             {
@@ -175,7 +180,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadeMilao -= 1;
-                mtbQuantidadeMilao.Text = Convert.ToString(contaQuantidadeMilao);
+                //mtbQuantidadeMilao.Text = Convert.ToString(contaQuantidadeMilao);
             }
         }
 
@@ -187,7 +192,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadeSprite < 10)
             {
                 contaQuantidadeSprite += 1;
-                mtbQuantidadeSprite.Text = Convert.ToString(contaQuantidadeSprite);
+               // mtbQuantidadeSprite.Text = Convert.ToString(contaQuantidadeSprite);
             }
             else
             {
@@ -203,7 +208,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadeSprite -= 1;
-                mtbQuantidadeSprite.Text = Convert.ToString(contaQuantidadeSprite);
+               // mtbQuantidadeSprite.Text = Convert.ToString(contaQuantidadeSprite);
             }
         }
 
@@ -214,7 +219,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadeFanta < 10)
             {
                 contaQuantidadeFanta += 1;
-                mtbQuantidadeFanta.Text = Convert.ToString(contaQuantidadeFanta);
+               // mtbQuantidadeFanta.Text = Convert.ToString(contaQuantidadeFanta);
             }
             else
             {
@@ -230,7 +235,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadeFanta -= 1;
-                mtbQuantidadeFanta.Text = Convert.ToString(contaQuantidadeFanta);
+                //mtbQuantidadeFanta.Text = Convert.ToString(contaQuantidadeFanta);
             }
         }
 
@@ -241,7 +246,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadeCoca < 10)
             {
                 contaQuantidadeCoca += 1;
-                mtbQuantidadeCoca.Text = Convert.ToString(contaQuantidadeCoca);
+                //mtbQuantidadeCoca.Text = Convert.ToString(contaQuantidadeCoca);
             }
             else
             {
@@ -257,7 +262,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadeCoca -= 1;
-                mtbQuantidadeCoca.Text = Convert.ToString(contaQuantidadeCoca);
+                //mtbQuantidadeCoca.Text = Convert.ToString(contaQuantidadeCoca);
             }
         }
 
@@ -268,7 +273,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadePepsi < 10)
             {
                 contaQuantidadePepsi += 1;
-                mtbQuantidadePepsi.Text = Convert.ToString(contaQuantidadePepsi);
+                //mtbQuantidadePepsi.Text = Convert.ToString(contaQuantidadePepsi);
             }
             else
             {
@@ -284,7 +289,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadePepsi -= 1;
-                mtbQuantidadePepsi.Text = Convert.ToString(contaQuantidadePepsi);
+                //mtbQuantidadePepsi.Text = Convert.ToString(contaQuantidadePepsi);
             }
         }
 
@@ -295,7 +300,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadeGuarana < 10)
             {
                 contaQuantidadeGuarana += 1;
-                mtbQuantidadeGuarana.Text = Convert.ToString(contaQuantidadeGuarana);
+               // mtbQuantidadeGuarana.Text = Convert.ToString(contaQuantidadeGuarana);
             }
             else
             {
@@ -311,7 +316,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadeGuarana -= 1;
-                mtbQuantidadeGuarana.Text = Convert.ToString(contaQuantidadeGuarana);
+                //mtbQuantidadeGuarana.Text = Convert.ToString(contaQuantidadeGuarana);
             }
         }
 
@@ -322,7 +327,7 @@ namespace MenuLateralHamburgueria
             if (contaQuantidadeSuco < 10)
             {
                 contaQuantidadeSuco += 1;
-                mtbQuantidadeSuco.Text = Convert.ToString(contaQuantidadeSuco);
+                //mtbQuantidadeSuco.Text = Convert.ToString(contaQuantidadeSuco);
             }
             else
             {
@@ -338,7 +343,7 @@ namespace MenuLateralHamburgueria
             else
             {
                 contaQuantidadeSuco -= 1;
-                mtbQuantidadeSuco.Text = Convert.ToString(contaQuantidadeSuco);
+               // mtbQuantidadeSuco.Text = Convert.ToString(contaQuantidadeSuco);
             }
         }
 
@@ -380,7 +385,42 @@ namespace MenuLateralHamburgueria
 
         private void frmProdutos_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'lanchoneteDataSet.produtos'. Você pode movê-la ou removê-la conforme necessário.
+            this.produtosTableAdapter.Fill(this.lanchoneteDataSet.produtos);
+
+        }
+
+        private void produtos_nome(object sender, EventArgs e)
+        {
+            
+           
+
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            
+
+        }
+        private void panelCentro_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnNew_Item_Click(object sender, EventArgs e)
+        {
+            Panel panelCentro = new Panel();
+            this.Controls.Clear(); // Clear the current controls on the form  
+
+            frmPedidos frmPedidos = new frmPedidos();
+            frmPedidos.TopLevel = false;
+            frmPedidos.FormBorderStyle = FormBorderStyle.None;
+            frmPedidos.Dock = DockStyle.Fill;
+            this.Controls.Add(frmPedidos); // Add the new form to the current form's controls  
+            frmPedidos.Show();
 
         }
     }
 }
+
